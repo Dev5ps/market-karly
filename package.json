@@ -1,0 +1,32 @@
+{
+  "name": "market-karly",
+  "version": "1.0.0",
+  "description": "멋쟁이 사자처럼 바닐라 프로젝트",
+  "main": "main.js",
+  "scripts": {
+    "all": "run-p serve start",
+    "serve": "npx json-server server/db/data.json",
+    "start": "npx live-server client --host=localhost --port=5500 --no-browser",
+    "sass": "sass client/sass:client/css",
+    "watch": "npm run sass -- --watch"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "javascript",
+    "시맨틱 마크업",
+    "웹표준",
+    "함수형 프로그래밍"
+  ],
+  "author": "담당자",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.32.0",
+    "json-server": "^0.17.1",
+    "live-server": "^1.2.2",
+    "npm-run-all": "^4.1.5"
+  },
+  "dependencies": {
+    "sass": "^1.57.1"
+  }
+}
