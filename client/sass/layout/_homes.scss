@@ -1,0 +1,96 @@
+@import '../utils/function';
+
+.main-banner{
+    align-items: flex-start;
+    display: flex;
+    width:rem(1920);
+    height:rem(370);
+    position: relative;
+    left:rem(0);
+    right:rem(0);
+    top:rem(0);
+    bottom:rem(0);
+
+}
+
+
+.main-banner__page--number{
+    position: absolute;
+    color: rgb(255, 255, 255);
+    background: rgba(0, 0, 0, 0.15);
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:rem(55);
+    height:rem(23);
+    line-height:rem(23);
+    font-size: rem(14);
+    font-weight: 400;
+    border-radius: rem(12);
+    top:rem(324);
+    left:rem(1436);
+}
+
+
+.swiper-1 {
+    width:rem(1920);
+    height:rem(370);
+    position: relative;
+    margin-bottom: 1rem;
+
+    swiper-slide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    }
+
+    img{
+    width: 100%; 
+    }  
+
+
+}
+        
+      
+
+  .swiper-button-prev {
+    width:rem(50);
+    height:rem(50);
+    background-image: url(../assets/main-banner/Arrow-left.png);
+    background-color:rgba(0, 0, 0, 0.2);/*까만색(0,0,0) 20% 불투명도*/
+    border: transparent;
+    position: absolute;
+    top:rem(147);
+    left:rem(351);
+    right:rem(1519);
+    bottom:rem(173);
+    z-index: 10;
+    border-radius: 100%;
+    // visibility:hidden;
+
+    &:after {
+    display:none;;
+    }
+    }
+
+    .swiper-button-next { 
+    width:rem(50);
+    height:rem(50);
+    background-image: url(../assets/main-banner/Arrow-right.png);
+    background-color:rgba(0, 0, 0, 0.2);/*까만색(0,0,0) 20% 불투명도*/
+    border: transparent;
+    position: absolute;
+    top:rem(147);
+    left:rem(1519);
+    right:rem(351);
+    bottom:rem(173);
+    z-index: 10;
+    border-radius: 100%;
+    // visibility: hidden;
+
+    &:after {
+    display:none;;
+    }
+    }

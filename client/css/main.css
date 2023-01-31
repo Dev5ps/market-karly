@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -359,6 +360,88 @@ q:before, q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+.main-banner {
+  align-items: flex-start;
+  display: flex;
+  width: 120rem;
+  height: 23.125rem;
+  position: relative;
+  left: 0rem;
+  right: 0rem;
+  top: 0rem;
+  bottom: 0rem;
+}
+
+.main-banner__page--number {
+  position: absolute;
+  color: rgb(255, 255, 255);
+  background: rgba(0, 0, 0, 0.15);
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.4375rem;
+  height: 1.4375rem;
+  line-height: 1.4375rem;
+  font-size: 0.875rem;
+  font-weight: 400;
+  border-radius: 0.75rem;
+  top: 20.25rem;
+  left: 89.75rem;
+}
+
+.swiper-1 {
+  width: 120rem;
+  height: 23.125rem;
+  position: relative;
+  margin-bottom: 1rem;
+}
+.swiper-1 swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.swiper-1 img {
+  width: 100%;
+}
+
+.swiper-button-prev {
+  width: 3.125rem;
+  height: 3.125rem;
+  background-image: url(../assets/main-banner/Arrow-left.png);
+  background-color: rgba(0, 0, 0, 0.2); /*까만색(0,0,0) 20% 불투명도*/
+  border: transparent;
+  position: absolute;
+  top: 9.1875rem;
+  left: 21.9375rem;
+  right: 94.9375rem;
+  bottom: 10.8125rem;
+  z-index: 10;
+  border-radius: 100%;
+}
+.swiper-button-prev:after {
+  display: none;
+}
+
+.swiper-button-next {
+  width: 3.125rem;
+  height: 3.125rem;
+  background-image: url(../assets/main-banner/Arrow-right.png);
+  background-color: rgba(0, 0, 0, 0.2); /*까만색(0,0,0) 20% 불투명도*/
+  border: transparent;
+  position: absolute;
+  top: 9.1875rem;
+  left: 94.9375rem;
+  right: 21.9375rem;
+  bottom: 10.8125rem;
+  z-index: 10;
+  border-radius: 100%;
+}
+.swiper-button-next:after {
+  display: none;
 }
 
 /*# sourceMappingURL=main.css.map */
