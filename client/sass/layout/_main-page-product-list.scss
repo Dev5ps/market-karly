@@ -133,6 +133,21 @@
 }
 
 
+.main-line-banner{
+  width: rem(1150);
+  margin:0 auto;
+  padding: rem(40) 0;
 
+  &__link{
+    display: block;
+    width: 100%;
+  }
+
+  img{
+    display: block;
+    width: 100%;
+  }
+
+}
 
 
