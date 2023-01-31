@@ -1,3 +1,5 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/variable/pretendardvariable-dynamic-subset.css");
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/variable/pretendardvariable-dynamic-subset.css");
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -359,6 +361,175 @@ q:before, q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+body {
+  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.a11y-hidden {
+  position: absolute;
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+body {
+  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.a11y-hidden {
+  position: absolute;
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+.main-product-list {
+  width: 71.875rem;
+  margin: 0 auto;
+  padding: 2.5rem 0;
+  position: relative;
+}
+.main-product-list__title {
+  margin: 0 auto 1.75rem auto;
+  font-weight: 700;
+  font-size: 1.75rem;
+  line-height: 4rem;
+  text-align: center;
+  color: #333333;
+}
+.main-product-list__button-prev {
+  background-image: url(../../assets/icons/Icon/swiper-right-arrow-button.svg);
+  width: 3.75rem;
+  height: 3.75rem;
+  left: 0;
+  margin-left: -1.875rem;
+  transform: rotate(180deg);
+}
+.main-product-list__button-prev::after {
+  display: none;
+}
+.main-product-list__button-next {
+  background-image: url(../../assets/icons/Icon/swiper-right-arrow-button.svg);
+  width: 3.75rem;
+  height: 3.75rem;
+  right: 0;
+  margin-right: -1.875rem;
+}
+.main-product-list__button-next::after {
+  display: none;
+}
+.main-product-list__button-next.swiper-button-next.swiper-button-disabled, .main-product-list__button-prev.swiper-button-prev.swiper-button-disabled {
+  opacity: 0;
+}
+.main-product-list .product-swiper {
+  width: 100%;
+  overflow: hidden;
+}
+.main-product-list .product-swiper .swiper-slide.product-item {
+  position: relative;
+  width: 15.5625rem;
+}
+.main-product-list .item {
+  position: relative;
+}
+.main-product-list .item a {
+  display: block;
+  text-decoration: none;
+}
+.main-product-list .item img {
+  display: block;
+  width: 100%;
+}
+.main-product-list .item figcaption {
+  margin-top: 1rem;
+  display: flex;
+  flex-flow: row wrap;
+}
+.main-product-list .item__title {
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.6;
+  color: #333333;
+}
+.main-product-list .item__discount-rate {
+  display: inline-block;
+  margin-top: 0.5rem;
+  margin-right: 0.5rem;
+  font-size: 1.3125rem;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #fa622f;
+}
+.main-product-list .item__discount-price {
+  order: 1;
+  display: inline-block;
+  width: 100%;
+  margin-top: 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #898989;
+  text-decoration: line-through;
+}
+.main-product-list .item__price {
+  display: inline-block;
+  margin-top: 0.5rem;
+  font-size: 1.3125rem;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #333333;
+}
+.main-product-list .item__cart-button {
+  position: absolute;
+  top: 18.1875rem;
+  right: 1rem;
+  padding: 0;
+  background: none;
+  border: 0;
+  width: 2.8125rem;
+  height: 2.8125rem;
+}
+.main-product-list .item__cart-button {
+  cursor: pointer;
+}
+
+.main-line-banner {
+  width: 71.875rem;
+  margin: 0 auto;
+  padding: 2.5rem 0;
+}
+.main-line-banner__link {
+  display: block;
+  width: 100%;
+}
+.main-line-banner img {
+  display: block;
+  width: 100%;
 }
 
 /*# sourceMappingURL=main.css.map */
