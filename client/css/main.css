@@ -361,4 +361,237 @@ table {
   border-spacing: 0;
 }
 
+a {
+  text-decoration: none;
+  color: #333333;
+}
+
+.footer {
+  color: #333333;
+  height: 39.3125rem;
+}
+
+.footer-inner {
+  border-top: 0.0625rem solid #e1e1e1;
+  width: 65.625rem;
+  height: 32.5625rem;
+  margin: auto;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  width: 65.625rem;
+  padding-top: 1.75rem;
+  margin-bottom: 1.5rem;
+}
+.footer-top .customer-service {
+  width: 29.8125rem;
+}
+.footer-top .customer-service .title {
+  font-weight: 700;
+  font-size: 1.333125rem;
+  line-height: 1.875rem;
+}
+.footer-top .customer-service .info {
+  display: flex;
+  width: 24.5625rem;
+  height: 3.3125rem;
+  margin: 16px 0;
+  height: 3.3125rem;
+  padding-bottom: 1rem;
+}
+.footer-top .customer-service .info__number {
+  display: block;
+  font-size: 2.36875rem;
+  line-height: 3.3125rem;
+  font-weight: 700;
+  text-align: left;
+  color: #333333;
+}
+.footer-top .customer-service .info__time {
+  font-weight: 600;
+  padding: 0.25rem;
+  line-height: 3.3125rem;
+  color: #333333;
+  align-self: center;
+}
+.footer-top .inquiry {
+  width: 29.8125rem;
+  height: 11.75rem;
+}
+.footer-top .inquiry .inquiry-list {
+  display: flex;
+  flex-direction: column;
+}
+.footer-top .inquiry .inquiry-list .button-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.footer-top .inquiry .inquiry-list .button-wrap .btn {
+  display: block;
+  border: 0.0625rem solid #c4c4c4;
+  background-color: transparent;
+  width: 8.75rem;
+  height: 2.5rem;
+  padding: 0.25rem;
+  text-align: center;
+  font-size: 1rem;
+  margin-right: 1rem;
+  align-self: center;
+  color: #333333;
+}
+.footer-top .inquiry .inquiry-list .button-wrap .time {
+  align-self: center;
+}
+.footer-top .inquiry .inquiry-list .button-wrap .time__info {
+  width: 20.0625rem;
+  line-height: 1.4375rem;
+}
+.footer-top .inquiry-mail {
+  width: 14rem;
+  height: 2.375rem;
+  margin-top: 1.375rem;
+}
+.footer-top .inquiry-mail .mail {
+  font-size: 0.75rem;
+  line-height: 1.1875rem;
+}
+.footer-top .inquiry-mail .mail__link {
+  color: #5F0080;
+  margin-left: 0.25rem;
+}
+.footer-top .about {
+  display: flex;
+  flex-direction: column;
+}
+.footer-top .about .footer-navigation {
+  display: flex;
+  justify-content: space-between;
+  width: 30.375rem;
+  font-size: 16px;
+  line-height: 1.625rem;
+  margin-bottom: 1.75rem;
+}
+.footer-top .about .address {
+  width: 26rem;
+  height: 7.125rem;
+  margin-bottom: 2.5rem;
+  line-height: 1.1875rem;
+}
+.footer-top .about .address .info-wrap {
+  display: flex;
+  flex-flow: row wrap;
+}
+.footer-top .about .address .info-wrap__line {
+  font-size: 0.75rem;
+  display: flex;
+}
+.footer-top .about .address .info-wrap__line:after {
+  content: "";
+  display: inline-block;
+  margin: 0 0.5rem;
+  width: 0.0625rem;
+  height: 0.625rem;
+  background: #333333;
+  align-self: center;
+}
+.footer-top .about .address .info-wrap__line a {
+  color: #5F0080;
+  margin-left: 0.1875rem;
+}
+.footer-top .about .address .info-wrap__line:last-child {
+  width: 100%;
+}
+.footer-top .about .address .info-wrap__line:last-child:after {
+  display: none;
+}
+.footer-top .about .address .info-wrap__line:nth-last-child(2) {
+  width: 100%;
+}
+.footer-top .about .address .info-wrap__line:nth-last-child(2):after {
+  display: none;
+}
+.footer-top .about .address .info-wrap__line:nth-last-child(3):after {
+  display: none;
+}
+.footer-top .about .address .info-wrap__line:nth-last-child(5):after {
+  display: none;
+}
+.footer-top .about .address .info-wrap__line:nth-last-child(7):after {
+  display: none;
+}
+.footer-top .about .address .info-wrap__line:nth-last-child(9):after {
+  display: none;
+}
+.footer-top .about .sns {
+  display: flex;
+  width: 14.375rem;
+  height: 1.875rem;
+}
+.footer-top .about .sns .sns-link__icon {
+  width: 1.875rem;
+  height: 1.875rem;
+  margin-right: 1.25rem;
+}
+
+.footer-middle {
+  height: 6.5rem;
+  padding: 1.625rem 0 2rem 0;
+  border-top: 0.0625rem solid #c4c4c4;
+}
+.footer-middle .certification {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-middle .certification li:nth-child(1) {
+  width: 13.5625rem;
+}
+.footer-middle .certification li:nth-child(2) {
+  width: 13.875rem;
+}
+.footer-middle .certification li:nth-child(2) p {
+  letter-spacing: -0.00625rem;
+}
+.footer-middle .certification li:nth-child(3) {
+  width: 16.875rem;
+}
+.footer-middle .certification li:nth-child(4) {
+  width: 17.6875rem;
+}
+.footer-middle .certification .certification-link {
+  display: inline-block;
+  display: flex;
+  text-align: left;
+  padding: 0;
+}
+.footer-middle .certification .certification-link__logo {
+  margin-right: 0.5rem;
+}
+.footer-middle .certification .certification-link .isms {
+  height: 2.125rem;
+}
+.footer-middle .certification .certification-link__summary p {
+  font-size: 0.625rem;
+  font-weight: 400;
+  -webkit-text-size-adjust: none;
+  margin-bottom: 0.3125rem;
+}
+
+.footer-bottom {
+  height: 6.75rem;
+  padding: 1.25rem 0.25rem 2rem;
+  font-size: 0.625rem;
+  line-height: 1rem;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+.footer-bottom .sales-description .copyright {
+  display: block;
+  padding-top: 0.4375rem;
+  font-style: normal;
+}
+
 /*# sourceMappingURL=main.css.map */
