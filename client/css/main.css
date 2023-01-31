@@ -1,5 +1,4 @@
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/variable/pretendardvariable-dynamic-subset.css");
-@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/variable/pretendardvariable-dynamic-subset.css");
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -372,7 +371,7 @@ a {
   color: inherit;
 }
 
-.a11y-hidden {
+.a11y-hidden, legend {
   position: absolute;
   position: absolute !important;
   width: 1px !important;
@@ -385,26 +384,186 @@ a {
   border: 0 !important;
 }
 
-body {
-  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 0px 0px 20px;
+  gap: 32px;
+  width: 65.625rem;
+  height: 7.8125rem;
+  background: #FFFFFF;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0 auto;
 }
-
-a {
-  text-decoration: none;
-  color: inherit;
+.header .member {
+  display: flex;
+  flex-direction: row;
+  padding: 12px 0px 0px;
+  gap: 12px;
+  width: 11.125rem;
+  height: 1.9375rem;
+  font-size: 0.7501875rem;
+  font-weight: 400;
+  line-height: 160%;
+  flex-grow: 0;
 }
-
-.a11y-hidden {
+.header .member li {
+  display: flex;
+}
+.header .member li:nth-child(1) {
+  width: 2.625rem;
+  height: 1.1875rem;
+  color: #5F0080;
+}
+.header .member li:nth-child(2) {
+  width: 2.8125rem;
+  height: 1.1875rem;
+}
+.header .member li:nth-child(3) {
+  width: 4.1875rem;
+  height: 1.1875rem;
+}
+.header .member__divide-bar {
+  display: inline-block;
+  width: 0.0625rem;
+  height: 0.8125rem;
+  background: #D9D9D9;
+  margin-right: 12px;
+  align-self: center;
+}
+.header .search-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  gap: 95px;
+  isolation: isolate;
+  width: 65.625rem;
+  height: 2.625rem;
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+.header .search-section .logo-and-switch {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 12px;
+  width: 16.6875rem;
+  height: 2.625rem;
+  position: relative;
+}
+.header .search-section .logo-and-switch .logo {
+  width: 5.125rem;
+  height: 2.625rem;
+}
+.header .search-section .logo-and-switch .switch {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 12px;
+  height: 2rem;
+}
+.header .search-section .logo-and-switch .switch li:nth-child(1) {
+  height: 2rem;
+  font-weight: 600;
+  font-size: 1.333rem;
+  line-height: 150%;
+  color: #5F0080;
+}
+.header .search-section .logo-and-switch .switch li:nth-child(2) {
+  height: 2rem;
+  font-weight: 600;
+  font-size: 1.333rem;
+  line-height: 150%;
+  color: #898989;
+  z-index: 0;
+}
+.header .search-section .logo-and-switch .switch li:nth-child(2):hover {
+  color: #5F0080;
+}
+.header .search-section .logo-and-switch .switch li:nth-child(2)::after {
+  content: "N";
+  font-size: 0.625rem;
   position: absolute;
-  position: absolute !important;
-  width: 1px !important;
-  height: 1px !important;
-  padding: 0 !important;
-  margin: -1px !important;
-  overflow: hidden !important;
-  clip: rect(0, 0, 0, 0) !important;
-  white-space: nowrap !important;
-  border: 0 !important;
+  top: 0px;
+  right: -10px;
+  color: #FA622F;
+}
+.header .search-section .logo-and-switch .switch__divide-bar {
+  display: inline-block;
+  width: 0.0625rem;
+  height: 0.8125rem;
+  background: #D9D9D9;
+  margin-right: 12px;
+}
+.header .search-section .search .inner {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  gap: 31px;
+  width: 25rem;
+  height: 3.75rem;
+  left: 330px;
+  top: -11px;
+  border: 1px solid #5F0080;
+  border-radius: 4px;
+  z-index: 2;
+}
+.header .search-section .search .inner__input {
+  width: 18.75rem;
+  height: 2.125rem;
+  font-weight: 400;
+  font-size: 1.333rem;
+  line-height: 160%;
+  color: #898989;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  border: none;
+  outline: none;
+}
+.header .search-section .search .inner__button {
+  width: 2.25rem;
+  height: 2.25rem;
+  border: none;
+  background-image: url(../../assets/header/Search.png);
+  background-color: transparent;
+  cursor: pointer;
+}
+.header .search-section .icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 20px;
+  width: 9.25rem;
+  height: 2.25rem;
+}
+.header .search-section .icons a:nth-child(1) {
+  width: 2.25rem;
+  height: 2.25rem;
+}
+.header .search-section .icons a:nth-child(2) {
+  width: 2.25rem;
+  height: 2.25rem;
+}
+.header .search-section .icons a:nth-child(3) {
+  width: 2.25rem;
+  height: 2.25rem;
+}
+.header .search-section .icons a svg:hover {
+  fill: #5F0080;
 }
 
 .main-product-list {

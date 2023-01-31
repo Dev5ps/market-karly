@@ -10,7 +10,7 @@ a{
   color: inherit;
 }
 
-.a11y-hidden{
+.a11y-hidden, legend{
   position: absolute;
 	position: absolute !important;
 	width: 1px !important;

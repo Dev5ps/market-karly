@@ -9,21 +9,145 @@
   <link rel="stylesheet" href="./css/main.css" />
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script src="./js/main.js" type="module"></script>
-  <title>Document</title>
+  <title>market-karly</title>
 </head>
 
 <body>
+  <header class="header">
+    <h1 class="a11y-hidden">마켓칼리</h1>
+
+    <ul class="member">
+      <li><a href="/">회원가입</a></li>
+      <li><span class="member__divide-bar" aria-hidden="true"></span><a href="/">로그인</a></li>
+      <li><span class="member__divide-bar" aria-hidden="true"></span><a href="/">고객센터<img src="./assets/header/Icon-down-1.png" alt="" /></a></li>
+    </ul>
+
+    <div class="search-section">
+      <div class="logo-and-switch">
+        <h1 class="logo">
+          <a href="/">
+            <img src="./assets/header/logo.png" alt="market-karly-logo" />
+          </a>
+        </h1>
+        <ul class="switch">
+          <li class><a href="/">마켓칼리</a></li>
+          <li><span class="switch__divide-bar" aria-hidden="true"></span><a href="/">뷰티칼리</a></li>
+        </ul>
+      </div>
 
 
-  <section>
-    <div class="swiper-1 product-swiper">
-      <div class="swiper-wrapper">
-          
-        </div>
+      <div class="search">
+
+        <h2 class="a11y-hidden">검색</h2>
+        <form method="POST" action="" class="search-form">
+          <fieldset>
+            <legend>검색 폼</legend>
+            <div class="inner">
+              <input type="search" id="search" class="inner__input" placeholder="검색어를 입력해주세요" />
+              <input type="button" class="inner__button"/>
+            </div>
+          </fieldset>
+        </form>
+
+      </div>
+      
+      <div class="icons">
+        <a href="/" class="icons__location">
+          <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_575_569)">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M18.006 30C18.006 30 8.7 22.544 8.7 15.306C8.7 12.8379 9.68045 10.4709 11.4257 8.72566C13.1709 6.98045 15.5379 6 18.006 6C20.4741 6 22.8411 6.98045 24.5863 8.72566C26.3315 10.4709 27.312 12.8379 27.312 15.306C27.312 22.544 18.006 30 18.006 30Z" stroke="#333333" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M17.912 17.907C19.4496 17.907 20.696 16.6606 20.696 15.123C20.696 13.5854 19.4496 12.339 17.912 12.339C16.3744 12.339 15.128 13.5854 15.128 15.123C15.128 16.6606 16.3744 17.907 17.912 17.907Z" stroke="#333333" stroke-width="1.7" stroke-linecap="square" stroke-linejoin="round"/>
+          </g>
+          <defs>
+          <clippath id="clip0_575_569">
+          <rect width="36" height="36" fill="white"/>
+          </clippath>
+          </defs>
+          </svg>
+        </a>
+        <a href="/" class="icons__heart">
+          <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M28.927 8.89301C28.3271 8.29267 27.6147 7.81642 26.8307 7.4915C26.0466 7.16657 25.2062 6.99933 24.3575 6.99933C23.5088 6.99933 22.6684 7.16657 21.8843 7.4915C21.1003 7.81642 20.3879 8.29267 19.788 8.89301L17.959 10.721L16.132 8.89301C14.9202 7.68097 13.2766 6.99995 11.5627 6.99976C9.84881 6.99957 8.20504 7.68024 6.993 8.89201C5.78096 10.1038 5.09993 11.7474 5.09975 13.4613C5.09956 15.1752 5.78022 16.819 6.992 18.031L8.82 19.86L17.252 28.294C17.4395 28.4815 17.6938 28.5868 17.959 28.5868C18.2242 28.5868 18.4785 28.4815 18.666 28.294L27.099 19.86L28.927 18.032C29.5272 17.4321 30.0033 16.7198 30.3281 15.9359C30.653 15.1519 30.8202 14.3116 30.8202 13.463C30.8202 12.6144 30.653 11.7741 30.3281 10.9902C30.0033 10.2062 29.5272 9.49392 28.927 8.89401V8.89301Z" stroke="#333333" stroke-width="1.7" stroke-linecap="round"/>
+          </svg>
+        </a>
+        <a href="/" class="icons__cart">
+          <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M30.844 10.207L28.124 21.777H12.534L9.82401 10.207H30.844Z" stroke="#333333" stroke-width="1.7" stroke-linecap="square" stroke-linejoin="round"/>
+          <path d="M25.684 29.467C26.8659 29.467 27.824 28.5089 27.824 27.327C27.824 26.1451 26.8659 25.187 25.684 25.187C24.5021 25.187 23.544 26.1451 23.544 27.327C23.544 28.5089 24.5021 29.467 25.684 29.467Z" stroke="#333333" stroke-width="1.7" stroke-linecap="square" stroke-linejoin="round"/>
+          <path d="M14.974 29.467C16.1559 29.467 17.114 28.5089 17.114 27.327C17.114 26.1451 16.1559 25.187 14.974 25.187C13.7921 25.187 12.834 26.1451 12.834 27.327C12.834 28.5089 13.7921 29.467 14.974 29.467Z" stroke="#333333" stroke-width="1.7" stroke-linecap="square" stroke-linejoin="round"/>
+          <path d="M5.164 6.547H8.964L10.724 14.047" stroke="#333333" stroke-width="1.7" stroke-linecap="square" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+
     </div>
-  </section>
+  </header>
+ 
 
-  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   <section class="main-product-list main-product-list-first">
     <h2 class="main-product-list__title">이 상품 어때요?</h2>
     <div class="product-swiper swiper-2"> 
@@ -188,9 +312,6 @@
     <div class="main-product-list__button-prev swiper-button-prev swiper-3-button-prev"></div>
     <div class="main-product-list__button-next swiper-button-next swiper-3-button-next"></div>
   </section>
-
-
-  
 
 </body>
 </html>
