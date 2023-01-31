@@ -4,41 +4,36 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
   <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="./css/style.css" />
+         href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script defer src="./js/main.js"></script>
+  <!-- <link rel="stylesheet" href="./css/style.css" /> -->
+  <link rel="stylesheet" href="./css/main.css" />
+  <!-- <link rel="stylesheet" href="./css/main-banner.css" /> -->
   <script src="./js/main.js" type="module"></script>
+ 
   <title>Document</title>
 </head>
 
 <body>
-
-
-  <section>
-    <div class="swiper-1 product-swiper">
-      <div class="swiper-wrapper">
-          
-        </div>
+<section class="main-banner">
+  <div class="swiper-1">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide main-banner__banner"><a href="https://github.com/Dev5ps"><img src="./assets/main-banner/banner05.png" alt="메인베너1" /></a>
+       <div class="main-banner__page--number">1/3</div>
+      </div>
+      <div class="swiper-slide main-banner__banner"><a href="https://github.com/Dev5ps"><img  src="./assets/main-banner/banner05.png" alt="메인베너2" /></a>
+        <div class="main-banner__page--number">2/3</div>
+      </div>
+      <div class="swiper-slide main-banner__banner"><a href="https://github.com/Dev5ps"><img  src="./assets/main-banner/banner05.png" alt="메인베너3" /></a>
+        <div class="main-banner__page--number">3/3</div>
+      </div>
     </div>
-  </section>
-  <section>
-    <div class="swiper-2 product-swiper">
-      <div class="swiper-wrapper">
-          
-        </div>
-    </div>
-  </section>
-  <section>
-    <div class="swiper-3 product-swiper">
-      <div class="swiper-wrapper">
-          
-        </div>
-    </div>
-  </section>
-
-
-  
-  
+  </div>
+  <div class="swiper-button-next main-banner__button-next"></div>
+  <div class="swiper-button-prev main banner__button-prev"></div>
+</section>
 </body>
 </html>
