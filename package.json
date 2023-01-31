@@ -8,7 +8,7 @@
     "serve": "npx json-server server/db/data.json",
     "start": "npx live-server client --host=localhost --port=5500 --no-browser",
     "sass": "sass client/sass:client/css",
-    "watch": "npm run sass -- --watch"
+    "watch": "npm run sass -- --watch --style compressed"
   },
   "keywords": [
     "html",
