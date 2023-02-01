@@ -4,7 +4,7 @@
 
 
 .main-product-list{
-  width: rem(1150);
+  width: rem(1050);
   margin:0 auto;
   padding: rem(40) 0;
   position: relative;
@@ -18,7 +18,7 @@
     color: $content;
   }
   &__button-prev{
-    background-image: url(../../assets/icons/Icon/swiper-right-arrow-button.svg);
+    background-image: url(../../assets/main-product-list/swiper-right-arrow-button.svg);
     width: rem(60);
     height: rem(60);
     left: 0;
@@ -29,7 +29,7 @@
     display: none;
   }
   &__button-next{
-    background-image: url(../../assets/icons/Icon/swiper-right-arrow-button.svg);
+    background-image: url(../../assets/main-product-list/swiper-right-arrow-button.svg);
     width: rem(60);
     height: rem(60);
     right: 0;
@@ -114,7 +114,7 @@
   
     &__cart-button{
       position: absolute;
-      top: rem(291);
+      top: rem(258);
       right: rem(16);
       padding: 0;
       background: none;
@@ -133,7 +133,7 @@
 
 
 .main-line-banner{
-  width: rem(1150);
+  width: rem(1050);
   margin:0 auto;
   padding: rem(40) 0;
 
