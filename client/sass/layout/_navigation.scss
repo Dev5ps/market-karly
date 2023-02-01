@@ -1,5 +1,6 @@
 @use '../utils/function' as *;
 @use '../abstracts/variables' as *;
+@use '../base/theme' as *;
 
 
 .navigation {
@@ -63,6 +64,8 @@
     visibility: hidden;
     position: absolute;
     top: rem(72px);
+    z-index: 10;
+    background-color: $white;
 
     &__list {
       position: relative;
