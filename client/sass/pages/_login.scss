@@ -1,0 +1,85 @@
+@use '../utils/function' as *;
+@use '../base/theme' as *;
+
+.login {
+  height: rem(471);
+  
+  .login-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: rem(80);
+    margin-bottom: rem(56);
+    
+    h2 {
+      font-weight: 600;
+      font-size: rem(21.328);
+      line-height: 150%;
+      margin-bottom: rem(44);
+    }
+    .login-form {
+      .login-inner {
+        display: flex;
+        flex-direction: column;
+
+        &__login {
+          font-weight: 400;
+          width: rem(340);
+          height: rem(50);
+          padding-left: rem(20);
+        }
+
+        &__password {
+          font-weight: 400;
+          width: rem(340);
+          height: rem(50);
+          margin-top: rem(12);
+          padding-left: rem(20);
+        }
+
+        .find-id-pw {
+          font-size: rem(12);
+          margin-top: rem(12);
+          margin-bottom: rem(28);
+          display: flex;
+          justify-content: flex-end;
+          
+          &__divide-bar {
+            display: inline-block;
+            width: rem(1);
+            height: rem(10);
+            background: $black;
+            margin-right: rem(4);
+            margin-left: rem(4);
+            align-self: center;
+          }
+        }
+      }
+      
+      .login-register {
+        display: flex;
+        flex-direction: column;
+
+        &__login-button {
+          border: none;
+          background-color: $primary;
+          color: $white;
+          width: rem(340);
+          height: rem(54);
+        }
+
+        &__register-button {
+          border: 1px solid;
+          color: $primary;
+          border-color: $primary;
+          background-color: $white;
+          width: rem(340);
+          height: rem(54);
+          margin-top: rem(12);
+          font-weight: 600;
+          line-height: 150%;
+        }
+      }
+    }
+  }
+}
