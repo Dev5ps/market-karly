@@ -12,6 +12,6 @@ export const dropdownToggle = (buttonNode, dropdownNode, token ) => {
       toggleClass(dropdownNode, token);
     }
 
-    getNode(buttonNode).addEventListener('click', dropdownToggleHandler);
+    getNode(buttonNode)?.addEventListener('click', dropdownToggleHandler);
   }
 }
