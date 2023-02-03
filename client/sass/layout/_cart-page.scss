@@ -33,8 +33,13 @@
     &__checkbox {
       width: rem(24px);
       height: rem(24px);
-      background: url(../../assets/main-cart/check-icon-true.svg) no-repeat;
+      background: url(../../assets/main-cart/check-icon-false.svg) no-repeat;
       appearance: none;
+      cursor: pointer;
+    }
+
+    &__checkbox:checked {
+      background: url(../../assets/main-cart/check-icon-true.svg) no-repeat;
     }
 
     &__text {
@@ -97,11 +102,15 @@
     &-checkbox {
       width: rem(24px);
       height: rem(24px);
-      background: url(../../assets/main-cart/check-icon-true.svg) no-repeat;
+      background: url(../../assets/main-cart/check-icon-false.svg) no-repeat;
       appearance: none;
       cursor: pointer;
     }
-    
+
+    &-checkbox:checked {
+      background: url(../../assets/main-cart/check-icon-true.svg) no-repeat;
+    }
+
     &-image {
       width: rem(60px);
       height: rem(78px);
