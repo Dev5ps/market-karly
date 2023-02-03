@@ -8,7 +8,8 @@
     width: rem(1050);
     margin: 0 auto;
     border: rem(2) black;
-
+    padding-bottom: rem(200);
+    
     .product-summary{
         display: flex;
         justify-content: space-between;
@@ -198,11 +199,11 @@
                                 display: inline-block;
                                 width: rem(10);
                                 height: rem(10);
-                                background: url('../../assets/sprite-icon/sprite-icons.png') no-repeat -38px -330px;
+                                background: url('../../assets/sprite-icon/sprite-icons.png') no-repeat -48px -340px;
                             }
                             .minus-button__icon{
                                 display: inline-block;
-                                background: url('../../assets/sprite-icon/sprite-icons.png') no-repeat -234px -178px;
+                                background: url('../../assets/sprite-icon/sprite-icons.png') no-repeat -244px -188px;
                                 width: rem(10);
                                 height: rem(6);
                                 
@@ -227,7 +228,7 @@
         .inner__add-cart{
 
             
-            .add-cart__total-price{
+            .add-cart__total-price {
         
                 justify-content: flex-end;
     
@@ -289,10 +290,10 @@
                 display: inline-block;
     
                 &-icon{
-                    background: url('../../assets/sprite-icon/sprite-icons.png') no-repeat -42px -180px;
-                    width: rem(28);
-                    height: rem(24);
-                    display: inline-block;
+                  background: url('../../assets/sprite-icon/sprite-icons.png') no-repeat -52px -254px;
+                  width: rem(28);
+                  height: rem(24);
+                  display: inline-block;
                 }
                 
             }
@@ -305,7 +306,7 @@
      
                 &-icon{
                     display: inline-block;
-                    background: url('../../assets/sprite-icon/sprite-icons.png') no-repeat -419px -156px;
+                    background: url('../../assets/sprite-icon/sprite-icons.png') no-repeat -429px -166px;
                     width: rem(22);
                     height: rem(24); 
 
@@ -329,9 +330,3 @@
         }
     }
 }
-
-
-
-
-
-        

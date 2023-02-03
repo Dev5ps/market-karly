@@ -1,5 +1,3 @@
-
-
 /* 렌더링 될 제품 리스트 아이템 */
 export const createProduct = ({
   name = '제품 이름',

@@ -1,4 +1,4 @@
-import { getNode, toggleClass, typeError } from "../../lib/index.js";
+import { getNode, toggleClass, typeError } from "../index.js";
 
 /** 
  * buttonNode에 마우스 왼쪽클릭 또는 엔터키 입력 시, 원하는 기능을 담은 클래스 token이 actionNode에 추가/삭제되는 토글 기능을 추가한다. 

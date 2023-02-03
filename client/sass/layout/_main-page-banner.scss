@@ -1,4 +1,5 @@
 @import '../utils/function';
+@import '../base/theme';
 
 .main-banner{
     width:100%;
@@ -9,7 +10,7 @@
     right:rem(0);
     top:rem(0);
     bottom:rem(0);
-
+    border-top: 2px solid $gray-400;
 }
 
 

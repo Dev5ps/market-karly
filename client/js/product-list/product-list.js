@@ -1,10 +1,4 @@
-
-import { getNode } from '../../lib/dom/getNode.js';
-import { insertLast } from '../../lib/dom/insert.js';
-import { tiger } from '../../lib/utils/tiger.js';
-import { toggleClass } from '../../lib/dom/css.js';
-import { attr } from '../../lib/dom/attr.js';
-import { createProduct } from './product-list-item.js';
+import { getNode, insertLast, tiger, createProduct } from '../index.js';
 
 /* 메인 리스트 스와이프 */
 

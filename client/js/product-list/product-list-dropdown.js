@@ -1,8 +1,6 @@
+import { toggleClass, getNode } from '../index.js';
 
-import { toggleClass } from '../../lib/dom/css.js';
-import { getNode } from '../../lib/dom/getNode.js';
-
-
+// toggleClass,getNode
 /* 제품 리스트 좌측 네비게이션 클릭 이벤트(s) */
 
 export const listNavigationToggle = (node) => {

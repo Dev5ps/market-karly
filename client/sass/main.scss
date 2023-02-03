@@ -4,9 +4,12 @@
 @use 'base/theme';
 @use 'layout/header';
 @use 'layout/navigation';
-@use 'layout/homes';
+@use 'layout/main-page-banner';
 @use 'layout/main-page-product-list';
 @use 'layout/footer';
-@use 'layout/product-detail';
-@use 'layout/cart-page';
-@use 'pages/product-list'
+@use 'pages/cart-page';
+@use 'pages/product-detail';
+@use 'pages/product-list';
+@use 'pages/login';
+@use 'pages/register';
+@use 'utils/function';

@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="ko-KR">
 <head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet"
-href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-<link rel="stylesheet" href="./css/main.css" />
-<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-<script src="./js/main.js" type="module"></script>
-<title>상세페이지 - 칼리 </title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./css/main.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="./js/main.js" type="module"></script>
+  <title>로그인 - 칼리</title>
 </head>
+
 <body>
 
   <header class="header">
@@ -124,134 +126,31 @@ href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     </div>
   </section>
 
-  <section class="product-detail">
-    <h2 class="a11y-hidden">상품 상세 페이지</h2>
-    <div class="product-summary">
-        <div class="detail-photo">
-        <img class="representative-image" src="./assets/product-detail/product01.png" alt="상품 대표 이미지">
-        </div>
-        <div class="detail-inner">
-        <div class="inner-title">
-        <p class="inner-title__delivery-text">샛별배송</p>
-        <p class="inner-title__name">[풀무원] 탱탱쫄면 (4개입)</p>
-        <p class="inner-title__description-text">튀기지 않아 부담 없는 매콤함</p>
-        <strong class="inner-title__price">4980 <span class="inner-title__price-won">원</span></strong>
-        <div class="inner-title__login-text">로그인 후,적립 혜택이 제공됩니다.</div>
-    </div>
-
-
-    <div class="inner-information">
-    <div class="inner-table">
-    <div class="inner-table__name">배송</div>
-    <div class="inner-table-contents">
-    <p class="inner-table-contents__value">샛별배송</p>
-    <div class="inner-table-contents__notice">
-    <p>23시 전 주문 시 내일 아침 7시 전 도착</p>
-    <br>(대구 부산 울산 샛별배송 운영시간 별도 확인)
-    </div>
-    </div>
-    </div>
-
-    <div class="inner-table">
-        <div class="inner-table__name">판매자</div>
-        <div class="inner-table-contents">
-            <p class="inner-table-contents__value">컬리</p>
-        </div>
-    </div>
-
-    <div class="inner-table">
-        <div class="inner-table__name">포장타입</div>
-        <div class="inner-table-contents">
-            <p class="inner-table-contents__value">상온 (종이포장)</p>
-            <div class="inner-table-contents__notice">
-            <p>택배배송은 에코 포장이 스티로폼으로 대체됩니다</p></div>
-        </div>
-    </div>
-
-    <div class="inner-table">
-        <div class="inner-table__name">판매단위</div>
-        <div class="inner-table-contents">
-            <p class="inner-table-contents__value">1봉</p>
-        </div>
-    </div>
-        
-    <div class="inner-table">
-        <div class="inner-table__name">중량/용량</div>
-        <div class="inner-table-contets">
-            <p class="inner-table-contents__value">123g*4봉</p>
-        </div>
-    </div>
-
-    <div class="inner-table">
-        <div class="inner-table__name">원산지</div>
-        <div class="inner-table-contents">
-            <p class="inner-table-contents__value">상세페이지 별도표기</p>
-        </div>
-    </div>    
-                    
-    <div class="inner-table">
-        <div class="inner-table__name">알레르기정보</div>
-        <div class="inner-table-contents">
-            <ul class="inner-table-contents__list-value">
-                <li>
-                    -대두, 밀, 쇠고기 함유
-                </li>
-                <li>
-                    계란, 우유, 메밀, 땅콩, 고등어, 게, 돼지고기, 새우, 복숭아, 토마토, 아황산류,호두, 잣, 닭고기, 오징어, 조개류(굴, 전복, 홍합 포함)를 사용한 제품과 같은 제조시설에서 제조
-                </li>
-            </ul>
-        </div>
-    </div> 
-
-    <div class="inner-table">
-        <div class="inner-table__name">상품선택</div>
-        <div class="inner-table-contents">
-            <div class="contents-count-box">
-                <strong>[풀무원] 탱탱쫄면 (4개입)</strong>
-                <div class="count-wrap">
-                    <button class="minus-button"><span class="minus-button__icon"></span></button>
-                    <span class="contents-count">1</span>
-                    <button class="plus-button"><span class="plus-button__icon"></span></button>
-                </div>
-                <span class="contents-total">4,980원</span>
+  <section class="login">
+    <div class="login-wrapper">
+    <h2>로그인</h2>
+    <form class="login-form" method="POST" action="">
+      <fieldset>
+        <legend>로그인 폼</legend>
+          <div class="login-inner">
+            <input id="LOGIN_ID" class="login-inner__login" type="text" name="id" required placeholder="아이디를 입력해주세요"/>
+            <input id="LOGIN_PW" class="login-inner__password" type="password" name="pw" required placeholder="비밀번호를 입력해주세요"/>
+            <div class="find-id-pw">
+              <a href="/">아이디 찾기</a>
+              <span class="find-id-pw__divide-bar" aria-hidden="true"></span>
+              <a href="/">비밀번호 찾기</a>
             </div>
-        </div>
-    </div> 
-
-    </div>
-
-    <div class="inner__add-cart">
-
-    <div class="add-cart__total-price">
-    <div class="add-cart__total-price-calculation">
-    <p class="total-price__text-price">총 상품금액:</p>
-    <p class="total-price__sum">4980원</p>
-    </div>
-    <div class="add-cart__benefit">
-    <div class="add-cart__benefit--saving-text">적립</div>
-    <p class="add-cart__benefit--login-text">로그인 후, 적립 혜택 제공</p>
-    </div>
-    </div>
-
-    <div class="product-detail__cart">
-    <button class="product-detail__cart--like"><span class="product-detail__cart--like-icon"></span></button>
-    <button class="product-detail__cart--notification"><span class="product-detail__cart--notification-icon"></span></button>
-    <button class="product-detail__cart--add-cart">장바구니 담기</button>
-    </div>
-    </div>
-    </div>
-
-
-    </div>
-
-    <div class="product-detail-contents">
-      <img src="./assets/product-detail/Navi.png" alt="네비게이션 이미지">
-      <img src="./assets/product-detail/Description.png" alt="상세 설명 이미지">
-      <img src="./assets/product-detail/_Detail.png" alt="칼리 설명 이미지">
-      <img src="./assets/product-detail/Review.png" alt="상품 리뷰 이미지">
+          </div>
+          <div class="login-register">
+            <input class="login-register__login-button" type="submit" value="로그인" />
+            <!-- 링크로 되어야함 회원가입 버튼 -->
+            <input class="login-register__register-button" type="submit" value="회원가입" />
+          </div>
+      </fieldset>
+    </form>
     </div>
   </section>
-
+  
   <footer class="footer">
     <div class="footer-inner">
       <div class="footer-top">
