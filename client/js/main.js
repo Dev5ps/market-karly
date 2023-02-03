@@ -1,4 +1,6 @@
-import { mainProductList, mainProductList2, dropdownToggle, swiper } from "./common/index.js";
-export * from './common/index.js';
+import { toggleClassAction, listNavigationToggle, rendingProductItem } from "./index.js";
 
-dropdownToggle('.category', '.navigation .dropdown', 'is-active');
+toggleClassAction('.category', '.navigation .dropdown', 'is-active');
+
+rendingProductItem('.product-list .list-contents .list');
+listNavigationToggle('.product-list .list-navigation');

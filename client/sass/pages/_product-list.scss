@@ -1,0 +1,327 @@
+@import '../utils/function';
+@import '../base/theme';
+
+
+.product-list{
+  position: relative;
+  width: rem(1050);
+  margin: 0 auto;
+  margin-bottom: rem(40);
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  border-top: 1px solid $gray-100;
+  &__title{
+    width: 100%;
+    font-size: rem(21);
+    font-weight: 600;
+    color: $black;
+    line-height: 1.5;
+    text-align: center;
+    margin: rem(48) auto;
+  }
+  .list-navigation{
+    position: sticky;
+    top:rem(80);
+    height: 100%;
+    max-height: calc(100% - rem(120));
+    width: rem(220);
+    overflow: visible;
+
+    h3{
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      border-bottom:rem(1) solid $gray-100;
+      height: rem(52);
+      line-height: rem(52);
+      font-size: rem(16);
+      font-weight: 500;
+    }
+
+    &__reset{
+      align-self: center;
+      padding: 0;
+      border: 0;
+      height: rem(16);
+      background: none;
+      font-size: rem(10);
+      font-weight: 600;
+      color: $gray-300;
+      cursor: pointer;
+    }
+
+    .list-navigation-item{
+      border-bottom:rem(1) solid $gray-100;
+      
+      button{
+        display: flex;
+        align-items: center;
+        position: relative;
+        text-align: left;
+        width: 100%;
+        height: rem(52);
+        padding:0;
+        border: 0;
+        background-color: #fff;
+        cursor: pointer;
+        .arrow-icon{
+          position: absolute;
+          top: 50%; right:0;
+          transform: translateY(rem(-3));
+          width: rem(10);
+          height: rem(6);
+          background: url(../../assets/sprite-icon/sprite-icons.png) no-repeat rem(-436) rem(-70);
+        }
+      }
+      button.is-active{
+        .arrow-icon{
+          background: url(../../assets/sprite-icon/sprite-icons.png) no-repeat rem(-436) rem(-44);
+        }
+      }
+      &__count{
+        align-self: center;
+        margin-left: rem(8);
+        font-size: rem(10);
+        font-weight: 600;
+        color: $gray-300;
+      }
+      .list-dropdown.is-active{
+        display: block;
+      }
+      .list-dropdown{
+        display: none;
+        .list-dropdown-item{
+          position: relative;
+          height: rem(50);
+          .list-dropdown-item-check{
+            position: absolute;
+            top:50%; left: 0;
+            margin-top: rem(-16);
+            display: flex;
+            flex-flow: row nowrap;
+            align-content: center;
+            font-size: rem(16);
+            height: rem(26);
+            line-height: rem(26);
+            color: $content;
+          }
+          .list-dropdown-item-check.checked{
+            .list-dropdown-item__check-icon{
+              background: url('../../assets/sprite-icon/sprite-icons.png') no-repeat rem(-486) rem(-323);
+            }
+          }
+          &__check-icon{
+            display: block;
+            width: rem(24);
+            height: rem(24);
+            background: url('../../assets/sprite-icon/sprite-icons.png') no-repeat rem(-486) rem(-291);
+            margin-right: rem(8);
+          }
+          &__count{
+            font-size: rem(12);
+            font-weight: 400;
+            color: $gray-300;
+            margin-left: rem(4);
+          }
+        }
+      }
+
+    }
+  }
+  .list-contents{
+    width: rem(783);
+    .flow-root{
+      display: flow-root;
+    }
+    &__total{
+      height: rem(44);
+      font-size: rem(16);
+      font-weight: 500;
+      color: $content;
+      float: left;
+    }
+    .classify-tab{
+      float: right;
+      height: rem(44);
+      display: flex;
+      font-size: 0;
+      li::after{
+        content: "";
+        display: inline-block;
+        width: rem(1);
+        height: rem(10);
+        background-color: $gray-300;
+        align-self: center;
+        margin:0 rem(8);
+      }
+      li:last-child::after{
+        display: none;
+      }
+      &__button{
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        font-size: rem(16);
+        font-weight: 500;
+        color: $gray-300;
+        cursor: pointer;
+      }
+      &__button.is-active{
+        color: $content;
+      }
+    }
+    
+    .list-pagination{
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      padding-top: rem(36);
+      margin-top: rem(24);
+      li{
+        margin:0 rem(-0.5);
+        a{
+          position: relative;
+          display: inline-block;
+          width: rem(34);
+          height: rem(34);
+          line-height: rem(34);
+          border: rem(1) solid $gray-100;
+          box-sizing: border-box;
+          font-size: rem(12);
+          font-weight: 400;
+          color: $content;
+          .arrow-icon{
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform: translate(rem(-5),rem(-4));
+            width: rem(10);
+            height: rem(8);
+          }
+          .first-arrow{
+            background: url('../../assets/sprite-icon/sprite-icons.png') no-repeat rem(-32) rem(-521);
+          }
+          .before-arrow{
+            background: url('../../assets/sprite-icon/sprite-icons.png') no-repeat rem(-68) rem(-521);
+          }
+          .after-arrow{
+            background: url('../../assets/sprite-icon/sprite-icons.png') no-repeat rem(-102) rem(-521);
+          }
+          .last-arrow{
+            background: url('../../assets/sprite-icon/sprite-icons.png') no-repeat rem(-134) rem(-521);
+          }
+        }
+      }
+    }
+  }
+}
+
+.product-list{
+  .list{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    gap: rem(18);
+    .item{
+      width: rem(249);
+      margin-bottom: rem(28);
+      position: relative;
+      a{
+        display: block;
+        text-decoration: none;
+      }
+      img{
+        display: block;
+        width: 100%;
+      }
+      .item-info{
+        margin-top: rem(16);
+        display: flex;
+        flex-flow: row wrap;
+        &__delivery{
+          font-size: rem(12);
+          font-weight: 600;
+          line-height: 1.5;
+          margin-bottom: rem(8);
+          color: $gray-400;
+        }
+        &__title{
+          width: 100%;
+          font-size: rem(16);
+          font-weight: 500;
+          line-height: 1.6;
+          color: $content;
+        }
+        &__discount-rate{
+          display: inline-block;
+          margin-top: rem(8);
+          margin-right: rem(8);
+          font-size: rem(21);
+          font-weight: 600;
+          line-height: 1.5;
+          color: $accent-yellow;
+        }
+        &__discount-price{
+          order: 1;
+          display: inline-block;
+          width: 100%;
+          margin-top: rem(8);
+          font-size: rem(12);
+          font-weight: 400;
+          line-height: 1.6;
+          color: $gray-400;
+          text-decoration: line-through;
+        }
+        &__price{
+          display: inline-block;
+          margin-top: rem(8);
+          font-size: rem(21);
+          font-weight: 600;
+          line-height: 1.5;
+          color: $content;
+        }
+        &__desc{
+          order: 2;
+          width: 100%;
+          margin-top: rem(8);
+          font-size: rem(12);
+          font-weight: 500;
+          line-height: 1.6;
+          color: $gray-400;
+        }
+      }
+      .tag{
+        order: 3;
+        width: 100%;
+        margin-top: rem(8);
+        &__item{
+          display: inline-block;
+          background-color: $gray-100;
+          border-radius: rem(4);
+          padding: rem(4);
+          font-size: rem(12);
+          font-weight: 600;
+          line-height: 1.5;
+          color: $content;
+        }
+        &__karly-only{
+          color: $primary;
+        }
+      }
+      &__cart-button{
+        position: absolute;
+        top: rem(258);
+        right: rem(16); 
+        padding: 0;
+        background: none;
+        border: 0;
+        width: rem(45);
+        height: rem(45);
+      }
+      &__cart-button{
+        cursor: pointer;
+      }
+    }
+  }
+}

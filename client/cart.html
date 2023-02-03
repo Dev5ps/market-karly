@@ -9,12 +9,10 @@
   href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./css/main.css" />
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-  <script defer src="./js/main.js" type="module"></script>
-  <title>회원가입 - 칼리</title>
+  <script src="./js/main.js" type="module"></script>
+  <title>장바구니 - 칼리</title>
 </head>
-
 <body>
-
   <header class="header">
     <h1 class="a11y-hidden">마켓칼리</h1>
 
@@ -125,186 +123,149 @@
       <a href="/" class="notice"><span class="notice--strong">샛별·낮 </span>배송안내</a>
     </div>
   </section>
+  
+  <section class="main-cart">
+    <h2 tabindex="0">장바구니</h2>
+    <div class="main-cart-container">
+      <div class="order-list">
+        <div class="select" aria-labelledby="select-label-1 select-label-2 select-label-3 select-label-4" tabindex="0">
+          <span id="select-label-1" class="a11y-hidden">현재 장바구니에 담긴 상품 중 선택한 수량은</span>
+          <span id="select-label-3" class="a11y-hidden">전체 수량은</span>
 
-  <main class="register">
-    <div class="register-inner">
-      <h2 class="register-title">회원가입</h2>
-      <span class="register-required required-mark-top">필수입력사항</span>
-      <form method="post" action="url" name="register-form" class="register-form" id="register-form">
-        <fieldset>
-          <legend>회원가입 폼</legend>
-          <div class="user-id-wrap wrapper">
-            <div class="user-label">
-              <label for="user-id"  class="user-label__title required-mark">아이디</label>
-            </div>
-            <input type="text" id="user-id" name="user-id" required placeholder="아이디를 입력해주세요" class="user-id-wrap__input register-input register-placeholder" value=""/>
-            <button type="submit" id ="id-duplication-button" class="user-id-wrap__check-btn register-btn">중복확인</button>
+          <label for="total-checkbox-1" class="a11y-hidden">전체 선택 체크박스</label>
+          <input type="checkbox" id="total-checkbox-1" class="select__checkbox" checked />
+
+          <span class="select__text">전체 선택 (<span id="select-label-2">1</span>/<span id="select-label-4">1</span>)</span>
+
+          <button type="button" class="select__delete" aria-label="선택한 모든 상품 삭제. 삭제하려면 클릭 또는 엔터키를 눌러주세요.">선택삭제</button>
+        </div>
+
+        <div class="refrigerated-food">
+          <div class="refrigerated-food-container" aria-label="냉장 식품 탭. 탭을 열고 닫으려면 클릭 또는 엔터키를 눌러주세요." tabindex="0">
+            <span class="refrigerated-food__icon"></span>
+            <span id="refrigerated-food-label" class="refrigerated-food__text">냉장 식품</span>
+            <span class="refrigerated-food__arrow"></span>
           </div>
 
-          <div class="user-password-wrap wrapper">
-            <div class="user-label">
-              <label for="password" class="user-label__title required-mark">비밀번호</label>
-            </div>
-            <input type="password" id="password" name="password" required placeholder="비밀번호를 입력해주세요" class="user-password-wrap__input register-input register-placeholder" value=""/>
-          </div>
+          <div class="item" aria-labelledby="item-title-1" tabindex="0">
+            <label for="item-checkbox-1" class="a11y-hidden">상품 선택 체크박스</label>
+            <input type="checkbox" id="item-checkbox-1" class="item-checkbox" />
+            
+            <a href="/" class="item-image" aria-label="상품 세부정보 페이지."></a>
+            
+            <a href="/" id="item-title-1" class="item-title" tabindex="-1">[풀무원] 탱탱쫄면 (4개입)</a>
 
-          <div class="user-password-check-wrap wrapper">
-            <div class="user-label">
-              <label for="password-check" class="user-label__title required-mark">비밀번호 확인</label>
+            <div class="item-amount" aria-labelledby="item-amount-label-1 item-amount-label-2" tabindex="0">
+              <button type="button" class="item-amount__substract" aria-label="상품 수량 빼기"></button>
+              <span id="item-amount-label-1" class="a11y-hidden">상품수량</span>
+              <span id="item-amount-label-2">1</span>
+              <button type="button" class="item-amount__add" aria-label="상품 수량 더하기"></button>
             </div>
-            <input type="password" id="password-check" name="password-check"  placeholder="비밀번호를 한번 더 입력해주세요" class="user-password-check-wrap__input register-input register-placeholder" value=""/>
-          </div>
 
-          <div class="user-name-wrap wrapper">
-            <div class="user-label">
-              <label for="user-name" class="user-label__title required-mark">이름</label>
+            <div class="item-price-wrapper" tabindex="0">
+              <span class="a11y-hidden">상품합산가격</span>
+              <span class="item-price">4,980원</span>
             </div>
-            <input type="text" id="user-name" name="name" placeholder="이름을 입력해주세요" class="user-name-wrap__input register-input register-placeholder" value=""/>
-          </div>
-
-          <div class="user-email-wrap wrapper">
-            <div class="user-label">
-              <label for="user-email" class="user-label__title required-mark">이메일</label>
-            </div>
-            <input type="email" id="user-email" name="email" placeholder="예)marketKarly@karly.com" class="user-email-wrap__input register-input register-placeholder" value=""/> 
-            <button type="submit" id ="email-duplication-button" class="user-email-wrap__check-btn register-btn">중복확인</button>
-          </div>
-
-          <div class="user-number-wrap wrapper">
-            <div class="user-label">
-              <label for="user-number" class="user-label__title required-mark">휴대폰</label>
-            </div>
-            <input type="tel" id="user-number" name="user-number" placeholder="숫자만 입력해주세요" class="user-number-wrap__input register-input register-placeholder" value=""/> 
-            <button type="submit" id ="get-auth-button" class="user-number-wrap__certification-btn register-btn">인증번호 받기</button> 
-          </div>
-
-          <div class="user-address-wrap wrapper">
-            <div class="user-label">
-              <label for="user-address" class="user-label__title required-mark">주소</label>
-            </div>
-            <div class="user-address-wrap-input register-input">
-              <button type="submit" id="user-address" class="user-address-wrap-input__search-btn">주소 검색</button>
-              <p>배송지에 따라 상품 정보가 달라질 수 있습니다.</p>
-            </div>
-          </div>
-
-          <div class="user-gender-wrap wrapper">
-            <div class="user-label">
-              <label for="user-gender" class="user-label__title">성별</label>
-            </div>
-            <div class="gender-check register-input" id="user-gender"> 
-              <div class="register-radio">
-                <label for="gender-male">
-                <input type="radio" id="gender-male" name="gender" class="gender-check__input" value="male" />
-                <span class="gender-check__title">남자</span>
-              </label>
-              </div>
-              <div class="register-radio">
-                <label for="gender-female">
-                  <input type="radio" id="gender-female" name="gender" class="gender-check__input" value="female" />
-                  <span class="gender-check__title">여자</span>
-                </label>
-              </div>
-              <div class="register-radio">
-                <label for="gender-none">
-                  <input type="radio" id="gender-none" name="gender" class="gender-check__input" value="none" />
-                  <span class="gender-check__title">선택안함</span>
-                </label>
-              </div>
-            </div>
-          </div>
-
-          <div class="user-birth-wrap wrapper">
-            <div class="user-label">
-              <label for="user-birth" class="user-label__title">생년월일</label>
-            </div>
-            <input type="date" id="user-birth" class="register-input" placeholder="YYYY / MM / DD"/>
-          </div>
-          
-          <div class="additional-info-wrap wrapper" >
-            <div class="user-label">
-              <label for="additional-info" class="user-label__title">추가입력 사항</label>
-            </div>
-            <div class="register-input" id="additional-info">
-              <div class="register-checkbox">
-                <label for="recommend-id" >
-                  <input type="checkbox" id="recommend-id" name="recommend-id" class="checkbox__input" value="" />
-                  <span>친구초대 추천인 아이디</span>
-                </label>
-              </div> 
-              <div class="register-checkbox">
-                <label for="participation-event">
-                  <input type="checkbox" id="participation-event" name="participate-event" class="checkbox__input" value="" />
-                  <span>참여 이벤트명</span> 
-                </label>
-              </div>
-            </div>
-          </div>
-        </fieldset>
-        
-        <div class="agreement">
-          <div class="agreement-title">
-            <h3 class="required-mark-agree">이용약관동의</h3>
-          </div>
-          <div class="check-form">
-            <div class="agreement-check" id="agreement-check">
-
-              <div class="check-total">
-                <label for="terms-agree-all">
-                  <input type="checkbox" id="terms-agree-all" name="check-total" class="check-total__input" value="" />
-                  <span class="check-total__title">전체 동의합니다.</span>
-                </label>
-                <p class="check-total__description">
-                  선택항목에 동의하지 않은 경우도 회원가입 및 일반적인 서비스를 이용할 수 있습니다.
-                </p> 
-              </div>
-
-              <div class="check-use check">
-                <label for="terms-of-use">
-                  <div class="check-n-title">
-                    <input type="checkbox" id="terms-of-use" name="check-use" class="check-use__input" value="" />
-                    <span class="check-use__title check__title">이용약관 동의 (필수)</span>
-                  </div>
-                  <a href="">약관보기 <span class="check__arrow"></span></a>
-                </label>
-              </div>
-
-              <div class="check-privacy check">
-                <label for="terms-of-privacy">
-                  <div class="check-n-title">
-                    <input type="checkbox" id="terms-of-privacy" name="check-privacy" class="check-privacy__input" value="" />
-                    <span class="check-privacy__title check__title">개인정보 수집 · 이용 동의 (필수)</span>
-                  </div>
-                  <a href="">약관보기 <span class="check__arrow"></span></a>
-                </label>
-              </div>
-
-              <div class="check-event check">
-                <label for="terms-of-event">
-                  <div class="check-n-title">
-                    <input type="checkbox" id="terms-of-event" name="check-event" class="check-event__input" value="" />
-                    <span class="check-event__title check__title">무료배송,할인쿠폰 등 혜택/정보 수신 동의 (선택)</span>
-                  </div>
-                  <a href="">약관보기 <span class="check__arrow"></span></a>
-                </label>
-              </div>
-
-              <div class="check-age check">
-                <label for="terms-of-age">
-                  <div class="check-n-title">
-                    <input type="checkbox" id="terms-of-age" name="check-age" class="check-age__input" value="" />
-                    <span class="check-age__title check__title">본인은 만 14세 이상입니다. (필수)</span>
-                  </div>
-                  <a href="">약관보기 <span class="check__arrow"></span></a>
-                </label>
-              </div> 
-            </div>
-            <button class="register-btn" id="register-btn" type="submit">가입하기</button>
+            
+            <button type="button" class="item-remove" aria-label="상품 삭제. 현재 상품을 목록에서 삭제합니다."></button>
           </div>
         </div>
-      </form>
+
+        <div class="frozen-food">
+          <div class="frozen-food-container" aria-label="냉동 식품 탭. 탭을 열고 닫으려면 클릭 또는 엔터키를 눌러주세요." tabindex="0">
+            <span class="frozen-food__icon"></span>
+            <span id="frozen-food-label" class="frozen-food__text">냉동 식품</span>
+            <span class="frozen-food__arrow"></span>
+          </div>
+        </div>
+
+        <div class="room-temperature-food">
+          <div class="room-temperature-food-container" aria-label="상온 식품 탭. 탭을 열고 닫으려면 클릭 또는 엔터키를 눌러주세요." tabindex="0">
+            <span class="room-temperature-food__icon"></span>
+            <span id="room-temperature-food-label" class="room-temperature-food__text">상온 식품</span>
+            <span class="room-temperature-food__arrow"></span>
+          </div>
+        </div>
+
+        <div class="select" aria-labelledby="select-label-5 select-label-6 select-label-7 select-label-8" tabindex="0">
+          <span id="select-label-5" class="a11y-hidden">현재 장바구니에 담긴 상품 중 선택한 수량은</span>
+          <span id="select-label-7" class="a11y-hidden">전체 수량은</span>
+
+          <label for="total-checkbox-2" class="a11y-hidden">전체 선택 체크박스</label>
+          <input type="checkbox" id="total-checkbox-2" class="select__checkbox" checked />
+          
+          <span class="select__text">전체 선택 (<span id="select-label-6">1</span>/<span id="select-label-8">1</span>)</span>
+          
+          <button type="button" class="select__delete" aria-label="선택한 모든 상품 삭제. 삭제하려면 클릭 또는 엔터키를 눌러주세요.">선택삭제</button>
+        </div>
+      </div>
+
+      <div class="order-detail">
+        <div class="address">
+          <ul class="address-info" tabindex="0">
+            <li class="address-title">
+              <span class="address-title__icon"></span>
+              <span class="address-title__text">배송지</span>
+            </li>
+            <li class="address-detail">서울 중랑구 면목로 42길 11 (행운빌딩) 603호</li>
+            <li class="delivery-type" aria-label=". 샛별배송 상품입니다.">샛별배송</li>
+          </ul>
+          <a href="/" target="_blank" class="modify-address">배송지 변경</a>
+        </div>
+
+        <div class="price" tabindex="0">
+          <ul class="price-detail">
+            <li>
+              <ul class="price-list">
+                <li>상품금액</li>
+                <li><strong>40,680</strong><span>원</span></li>
+              </ul>
+            </li>
+            <li>
+              <ul class="price-list">
+                <li>상품할인금액</li>
+                <li><strong>-4,651</strong><span>원</span></li>
+              </ul>
+            </li>
+            <li>
+              <ul class="price-list">
+                <li>배송비</li>
+                <li>
+                  <strong>+3,000</strong>
+                  <span>원</span>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="price-result">
+            <li>
+              <ul class="price-result-list">
+                <li>결제예정금액</li>
+                <li class="price-total-list">
+                  <div class="price-total-list__value"><span>40,680</span></div>원
+                </li>
+              </ul>
+            </li>
+            <li class="price-point">
+                <span aria-hidden="true" class="price-point__badge">적립</span>
+                <span class="price-point__text">최대 36원 적립 일반 0.1%</span>
+            </li>
+          </ul>
+        </div>
+
+        <button type="submit" class="order">주문하기</button>
+
+        <ul class="notice" tabindex="0">
+          <li class="a11y-hidden" aria-label="주문안내."></li>
+          <li class="notice-list">쿠폰 및 적립금은 주문서에서 사용 가능합니다.</li>
+          <li class="notice-list">[주문완료] 상태일 경우에만 주문 취소 가능합니다.</li>
+          <li class="notice-list">[마이컬리 - 주문내역 상세페이지] 에서 직접 취소하실 수 있습니다.</li>
+          <li class="notice-list">쿠폰, 적립금 사용 금액을 제외한 실 결제 금액 기준으로 최종 산정됩니다.</li>
+          <li class="notice-list">상품별로 적립금 지급 기준이 다를 수 있습니다. (상품 상세 페이지에서 확인 가능합니다)</li>
+        </ul>
+      </div>
     </div>
-  </main>
+  </section>
 
   <footer class="footer">
     <div class="footer-inner">
@@ -459,5 +420,6 @@
       <small class="copyright">© KURLY CORP. ALL RIGHTS RESERVED</small>
     </div> 
   </footer>
+
 </body>
 </html>

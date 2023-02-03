@@ -1,0 +1,332 @@
+@import '../utils/function'; 
+@import '../base/theme'; 
+
+
+
+
+.product-detail{
+    width: rem(1050);
+    margin: 0 auto;
+    border: rem(2) black;
+    padding-bottom: rem(200);
+    
+    .product-summary{
+        display: flex;
+        justify-content: space-between;
+    }
+    .detail-photo{
+        width: rem(490);
+       
+        img{
+    /* product01 */
+        display: block;
+        width: rem(400);
+        height: rem(514);
+    
+        }
+    }
+    .detail-inner{
+        width: rem(560);
+        // background-color: pink;
+        flex-direction: column;
+    
+        .inner-title{
+    
+    
+            &__delivery-text{
+                /* 샛별배송 */
+                padding-bottom: rem(16);
+                height: rem(30);
+        /* Heading/arge */
+                font-family: 'Pretendard';
+                font-style: normal;
+                font-weight: 700;
+                font-size: rem(21.328);
+                line-height: 140%;
+        /* identica to box height, or rem(30) */
+        /*          gray/500 */
+                color: #6B6B6B;
+            }
+            &__name{
+               /* [풀무원] 탱탱쫄면 (4개입) */
+                /* Label/XL */
+                font-family: 'Pretendard';
+                font-style: normal;
+                font-weight: 600;
+                font-size: rem(28.43);
+                line-height: 150%;
+                /* identical to box height, or rem(43) */
+                /* content */
+                color: #333333;
+            }
+    
+            &__description-text{
+                /* 튀기지 않아 부담 없는 매콤함 */  
+                /* Paragraph/Medium */
+                font-family: 'Pretendard';
+                font-style: normal;
+                font-weight: 400;
+                font-size: rem(16);
+                line-height: 160%;
+                /* identical to box height, or rem(26) */
+                            
+                            
+                /* gray/400 */
+                            
+                color: #898989; 
+            } 
+            &__price{
+                /* 4,980 */
+                display: block;
+    
+                /* Label/XL */
+    
+                font-family: 'Pretendard';
+                font-style: normal;
+                font-weight: 600;
+                font-size: rem(28.43);
+                line-height: 150%;
+                /* identical to box height, or 43px */
+    
+    
+                /* content */
+    
+                color: #333333;    
+            }               
+            &__price-won{
+                /* 원 */
+    
+    
+                width: rem(14);
+                height: rem(22);
+                
+                /* Heading/Medium */
+                
+                font-family: 'Pretendard';
+                font-style: normal;
+                font-weight: 700;
+                font-size: rem(16);
+                line-height: 140%;
+                /* or 22px */
+                
+                
+                /* content */
+                
+                color: #333333;    
+            }
+            /* 로그인 후, 적립 혜택이 제공됩니다. */
+            &__login-text{
+                
+                /* Label/Medium */
+                
+                font-family: 'Pretendard';
+                font-style: normal;
+                font-weight: 600;
+                font-size: rem(16);
+                line-height: 150%;
+                /* identical to box height, or 24px */
+                
+                
+                /* primary */
+                
+                color: #5F0080;
+            }
+    
+    
+        }
+    
+        .inner-information{
+            .inner-table{
+                border-top: rem(1) solid $gray-100;
+                padding: rem(16) 0;
+                display: flex;
+                flex-flow: row nowrap;
+                &__name{
+                    width: rem(128);
+                    flex-shrink: 0;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: rem(12.003);
+                    line-height: 150%;
+                    color: $gray-500;
+                    margin-bottom: rem(4);
+                }
+                .inner-table-contents{
+                    flex-shrink: 1;
+                    flex-grow: 1;
+                    &__value{
+                        font-weight: 600;
+                        font-size: rem(12.003);
+                        line-height: 150%;
+                        color: $gray-500;
+                    }
+                    &__notice{
+                        font-weight: 600;
+                        font-size: rem(12.003);
+                        line-height: 150%;    
+                        color: $gray-400;
+                    }
+                    &__list-value{
+                        font-weight: 400;
+                        font-size: rem(12.003);
+                        line-height: 150%;
+                        color: $gray-500;    
+                    }
+                    .contents-count-box{
+                        border: rem(1) solid $gray-100;
+                        padding: rem(12) rem(12) rem(12) rem(16);
+                        display: flex;
+                        flex-flow: row wrap;
+                        justify-content: space-between;
+                        strong{
+                            display: block;
+                            width: 100%;
+                            font-weight: 600;
+                            font-size: rem(12.003);
+                            line-height: 150%;
+                            color: $gray-500;
+                            padding-bottom: rem(16);
+                    
+                        }
+                        .contents-count{
+                            padding: 0 rem(8);
+                        }   
+                        button{
+                            width: rem(32);
+                            height: rem(32);
+                            
+                            .plus-button__icon{
+                                display: inline-block;
+                                width: rem(10);
+                                height: rem(10);
+                                background: url('../../assets/sprite-icon/sprite-icons.png') no-repeat -48px -340px;
+                            }
+                            .minus-button__icon{
+                                display: inline-block;
+                                background: url('../../assets/sprite-icon/sprite-icons.png') no-repeat -244px -188px;
+                                width: rem(10);
+                                height: rem(6);
+                                
+                            }
+                            .contents-count{
+                                font-weight: 600;
+                                font-size: rem(16);
+                                line-height: 150%;    
+                            }
+                        }
+                        .contents-total{
+                            padding-right: rem(2);
+                            font-weight: 600;
+                            font-size: rem(12.003);
+                            line-height: 150%;
+                        }
+                    }
+                        
+                }
+            }
+        }
+        .inner__add-cart{
+
+            
+            .add-cart__total-price {
+        
+                justify-content: flex-end;
+    
+                
+            &-calculation{
+                display: flex;
+                padding-bottom: rem(8);
+                justify-content: flex-end;
+                
+                
+                .total-price__text-price{
+                    padding:rem(9.5) 0 ;
+                    font-weight: 600;
+                    font-size: rem(16);
+                    line-height: 150%;
+                    margin-right: rem(17);
+                }  
+                .total-price__sum{
+                    font-weight: 600;
+                    font-size: rem(28.43);
+                    line-height: 150%;
+                }
+            }    
+            }
+            .add-cart__benefit{
+                display: flex;
+                justify-content: flex-end;
+                &--saving-text{
+                    display: block;
+                    background: #FA622F;
+                    border-radius: rem(15);
+                    padding: rem(8) rem(4) ;
+                    font-weight: 400;
+                    font-size: rem(10);
+                    line-height: 160%;
+                    color: $white; 
+                    width: rem(34);
+                    gap: rem(4);
+                    text-align: center;  
+                }
+                &--login-text{
+                    font-weight: 600;
+                    font-size: rem(16);
+                    line-height: 150%;
+                    margin-left: rem(6);
+                    display: inline-block;
+                    text-align: center;
+                    padding-top: rem(5);
+    
+                }
+            }
+            .product-detail__cart{
+            &--like{ 
+                border: rem(1) solid $gray-100;
+                border-radius: rem(4);
+                margin-right: rem(9);
+                width: rem(54);
+                height: rem(54);
+                display: inline-block;
+    
+                &-icon{
+                  background: url('../../assets/sprite-icon/sprite-icons.png') no-repeat -52px -254px;
+                  width: rem(28);
+                  height: rem(24);
+                  display: inline-block;
+                }
+                
+            }
+            &--notification{
+                width: rem(54);
+                height: rem(54); 
+                border: rem(1) solid $gray-100;
+                border-radius: rem(4);
+                display: inline-block;
+     
+                &-icon{
+                    display: inline-block;
+                    background: url('../../assets/sprite-icon/sprite-icons.png') no-repeat -429px -166px;
+                    width: rem(22);
+                    height: rem(24); 
+
+                    }
+    
+    
+            }
+            &--add-cart{
+                width: rem(424);
+                height: rem(54);
+                background:$primary;
+                border-radius: rem(4);    
+                font-weight: 600;
+                font-size: rem(16);
+                line-height: 150%;
+                color: $white;
+                margin-left: rem(9);
+                text-align: center;
+            }    
+            }
+        }
+    }
+}

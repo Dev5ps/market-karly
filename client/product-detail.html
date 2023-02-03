@@ -1,18 +1,16 @@
 <!DOCTYPE html>
 <html lang="ko-KR">
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
-  <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="./css/main.css" />
-  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-  <script defer src="./js/main.js" type="module"></script>
-  <title>회원가입 - 칼리</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+<link rel="stylesheet" href="./css/main.css" />
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="./js/main.js" type="module"></script>
+<title>상세페이지 - 칼리 </title>
 </head>
-
 <body>
 
   <header class="header">
@@ -126,185 +124,133 @@
     </div>
   </section>
 
-  <main class="register">
-    <div class="register-inner">
-      <h2 class="register-title">회원가입</h2>
-      <span class="register-required required-mark-top">필수입력사항</span>
-      <form method="post" action="url" name="register-form" class="register-form" id="register-form">
-        <fieldset>
-          <legend>회원가입 폼</legend>
-          <div class="user-id-wrap wrapper">
-            <div class="user-label">
-              <label for="user-id"  class="user-label__title required-mark">아이디</label>
-            </div>
-            <input type="text" id="user-id" name="user-id" required placeholder="아이디를 입력해주세요" class="user-id-wrap__input register-input register-placeholder" value=""/>
-            <button type="submit" id ="id-duplication-button" class="user-id-wrap__check-btn register-btn">중복확인</button>
-          </div>
-
-          <div class="user-password-wrap wrapper">
-            <div class="user-label">
-              <label for="password" class="user-label__title required-mark">비밀번호</label>
-            </div>
-            <input type="password" id="password" name="password" required placeholder="비밀번호를 입력해주세요" class="user-password-wrap__input register-input register-placeholder" value=""/>
-          </div>
-
-          <div class="user-password-check-wrap wrapper">
-            <div class="user-label">
-              <label for="password-check" class="user-label__title required-mark">비밀번호 확인</label>
-            </div>
-            <input type="password" id="password-check" name="password-check"  placeholder="비밀번호를 한번 더 입력해주세요" class="user-password-check-wrap__input register-input register-placeholder" value=""/>
-          </div>
-
-          <div class="user-name-wrap wrapper">
-            <div class="user-label">
-              <label for="user-name" class="user-label__title required-mark">이름</label>
-            </div>
-            <input type="text" id="user-name" name="name" placeholder="이름을 입력해주세요" class="user-name-wrap__input register-input register-placeholder" value=""/>
-          </div>
-
-          <div class="user-email-wrap wrapper">
-            <div class="user-label">
-              <label for="user-email" class="user-label__title required-mark">이메일</label>
-            </div>
-            <input type="email" id="user-email" name="email" placeholder="예)marketKarly@karly.com" class="user-email-wrap__input register-input register-placeholder" value=""/> 
-            <button type="submit" id ="email-duplication-button" class="user-email-wrap__check-btn register-btn">중복확인</button>
-          </div>
-
-          <div class="user-number-wrap wrapper">
-            <div class="user-label">
-              <label for="user-number" class="user-label__title required-mark">휴대폰</label>
-            </div>
-            <input type="tel" id="user-number" name="user-number" placeholder="숫자만 입력해주세요" class="user-number-wrap__input register-input register-placeholder" value=""/> 
-            <button type="submit" id ="get-auth-button" class="user-number-wrap__certification-btn register-btn">인증번호 받기</button> 
-          </div>
-
-          <div class="user-address-wrap wrapper">
-            <div class="user-label">
-              <label for="user-address" class="user-label__title required-mark">주소</label>
-            </div>
-            <div class="user-address-wrap-input register-input">
-              <button type="submit" id="user-address" class="user-address-wrap-input__search-btn">주소 검색</button>
-              <p>배송지에 따라 상품 정보가 달라질 수 있습니다.</p>
-            </div>
-          </div>
-
-          <div class="user-gender-wrap wrapper">
-            <div class="user-label">
-              <label for="user-gender" class="user-label__title">성별</label>
-            </div>
-            <div class="gender-check register-input" id="user-gender"> 
-              <div class="register-radio">
-                <label for="gender-male">
-                <input type="radio" id="gender-male" name="gender" class="gender-check__input" value="male" />
-                <span class="gender-check__title">남자</span>
-              </label>
-              </div>
-              <div class="register-radio">
-                <label for="gender-female">
-                  <input type="radio" id="gender-female" name="gender" class="gender-check__input" value="female" />
-                  <span class="gender-check__title">여자</span>
-                </label>
-              </div>
-              <div class="register-radio">
-                <label for="gender-none">
-                  <input type="radio" id="gender-none" name="gender" class="gender-check__input" value="none" />
-                  <span class="gender-check__title">선택안함</span>
-                </label>
-              </div>
-            </div>
-          </div>
-
-          <div class="user-birth-wrap wrapper">
-            <div class="user-label">
-              <label for="user-birth" class="user-label__title">생년월일</label>
-            </div>
-            <input type="date" id="user-birth" class="register-input" placeholder="YYYY / MM / DD"/>
-          </div>
-          
-          <div class="additional-info-wrap wrapper" >
-            <div class="user-label">
-              <label for="additional-info" class="user-label__title">추가입력 사항</label>
-            </div>
-            <div class="register-input" id="additional-info">
-              <div class="register-checkbox">
-                <label for="recommend-id" >
-                  <input type="checkbox" id="recommend-id" name="recommend-id" class="checkbox__input" value="" />
-                  <span>친구초대 추천인 아이디</span>
-                </label>
-              </div> 
-              <div class="register-checkbox">
-                <label for="participation-event">
-                  <input type="checkbox" id="participation-event" name="participate-event" class="checkbox__input" value="" />
-                  <span>참여 이벤트명</span> 
-                </label>
-              </div>
-            </div>
-          </div>
-        </fieldset>
-        
-        <div class="agreement">
-          <div class="agreement-title">
-            <h3 class="required-mark-agree">이용약관동의</h3>
-          </div>
-          <div class="check-form">
-            <div class="agreement-check" id="agreement-check">
-
-              <div class="check-total">
-                <label for="terms-agree-all">
-                  <input type="checkbox" id="terms-agree-all" name="check-total" class="check-total__input" value="" />
-                  <span class="check-total__title">전체 동의합니다.</span>
-                </label>
-                <p class="check-total__description">
-                  선택항목에 동의하지 않은 경우도 회원가입 및 일반적인 서비스를 이용할 수 있습니다.
-                </p> 
-              </div>
-
-              <div class="check-use check">
-                <label for="terms-of-use">
-                  <div class="check-n-title">
-                    <input type="checkbox" id="terms-of-use" name="check-use" class="check-use__input" value="" />
-                    <span class="check-use__title check__title">이용약관 동의 (필수)</span>
-                  </div>
-                  <a href="">약관보기 <span class="check__arrow"></span></a>
-                </label>
-              </div>
-
-              <div class="check-privacy check">
-                <label for="terms-of-privacy">
-                  <div class="check-n-title">
-                    <input type="checkbox" id="terms-of-privacy" name="check-privacy" class="check-privacy__input" value="" />
-                    <span class="check-privacy__title check__title">개인정보 수집 · 이용 동의 (필수)</span>
-                  </div>
-                  <a href="">약관보기 <span class="check__arrow"></span></a>
-                </label>
-              </div>
-
-              <div class="check-event check">
-                <label for="terms-of-event">
-                  <div class="check-n-title">
-                    <input type="checkbox" id="terms-of-event" name="check-event" class="check-event__input" value="" />
-                    <span class="check-event__title check__title">무료배송,할인쿠폰 등 혜택/정보 수신 동의 (선택)</span>
-                  </div>
-                  <a href="">약관보기 <span class="check__arrow"></span></a>
-                </label>
-              </div>
-
-              <div class="check-age check">
-                <label for="terms-of-age">
-                  <div class="check-n-title">
-                    <input type="checkbox" id="terms-of-age" name="check-age" class="check-age__input" value="" />
-                    <span class="check-age__title check__title">본인은 만 14세 이상입니다. (필수)</span>
-                  </div>
-                  <a href="">약관보기 <span class="check__arrow"></span></a>
-                </label>
-              </div> 
-            </div>
-            <button class="register-btn" id="register-btn" type="submit">가입하기</button>
-          </div>
+  <section class="product-detail">
+    <h2 class="a11y-hidden">상품 상세 페이지</h2>
+    <div class="product-summary">
+        <div class="detail-photo">
+        <img class="representative-image" src="./assets/product-detail/product01.png" alt="상품 대표 이미지">
         </div>
-      </form>
+        <div class="detail-inner">
+        <div class="inner-title">
+        <p class="inner-title__delivery-text">샛별배송</p>
+        <p class="inner-title__name">[풀무원] 탱탱쫄면 (4개입)</p>
+        <p class="inner-title__description-text">튀기지 않아 부담 없는 매콤함</p>
+        <strong class="inner-title__price">4980 <span class="inner-title__price-won">원</span></strong>
+        <div class="inner-title__login-text">로그인 후,적립 혜택이 제공됩니다.</div>
     </div>
-  </main>
+
+
+    <div class="inner-information">
+    <div class="inner-table">
+    <div class="inner-table__name">배송</div>
+    <div class="inner-table-contents">
+    <p class="inner-table-contents__value">샛별배송</p>
+    <div class="inner-table-contents__notice">
+    <p>23시 전 주문 시 내일 아침 7시 전 도착</p>
+    <br>(대구 부산 울산 샛별배송 운영시간 별도 확인)
+    </div>
+    </div>
+    </div>
+
+    <div class="inner-table">
+        <div class="inner-table__name">판매자</div>
+        <div class="inner-table-contents">
+            <p class="inner-table-contents__value">컬리</p>
+        </div>
+    </div>
+
+    <div class="inner-table">
+        <div class="inner-table__name">포장타입</div>
+        <div class="inner-table-contents">
+            <p class="inner-table-contents__value">상온 (종이포장)</p>
+            <div class="inner-table-contents__notice">
+            <p>택배배송은 에코 포장이 스티로폼으로 대체됩니다</p></div>
+        </div>
+    </div>
+
+    <div class="inner-table">
+        <div class="inner-table__name">판매단위</div>
+        <div class="inner-table-contents">
+            <p class="inner-table-contents__value">1봉</p>
+        </div>
+    </div>
+        
+    <div class="inner-table">
+        <div class="inner-table__name">중량/용량</div>
+        <div class="inner-table-contets">
+            <p class="inner-table-contents__value">123g*4봉</p>
+        </div>
+    </div>
+
+    <div class="inner-table">
+        <div class="inner-table__name">원산지</div>
+        <div class="inner-table-contents">
+            <p class="inner-table-contents__value">상세페이지 별도표기</p>
+        </div>
+    </div>    
+                    
+    <div class="inner-table">
+        <div class="inner-table__name">알레르기정보</div>
+        <div class="inner-table-contents">
+            <ul class="inner-table-contents__list-value">
+                <li>
+                    -대두, 밀, 쇠고기 함유
+                </li>
+                <li>
+                    계란, 우유, 메밀, 땅콩, 고등어, 게, 돼지고기, 새우, 복숭아, 토마토, 아황산류,호두, 잣, 닭고기, 오징어, 조개류(굴, 전복, 홍합 포함)를 사용한 제품과 같은 제조시설에서 제조
+                </li>
+            </ul>
+        </div>
+    </div> 
+
+    <div class="inner-table">
+        <div class="inner-table__name">상품선택</div>
+        <div class="inner-table-contents">
+            <div class="contents-count-box">
+                <strong>[풀무원] 탱탱쫄면 (4개입)</strong>
+                <div class="count-wrap">
+                    <button class="minus-button"><span class="minus-button__icon"></span></button>
+                    <span class="contents-count">1</span>
+                    <button class="plus-button"><span class="plus-button__icon"></span></button>
+                </div>
+                <span class="contents-total">4,980원</span>
+            </div>
+        </div>
+    </div> 
+
+    </div>
+
+    <div class="inner__add-cart">
+
+    <div class="add-cart__total-price">
+    <div class="add-cart__total-price-calculation">
+    <p class="total-price__text-price">총 상품금액:</p>
+    <p class="total-price__sum">4980원</p>
+    </div>
+    <div class="add-cart__benefit">
+    <div class="add-cart__benefit--saving-text">적립</div>
+    <p class="add-cart__benefit--login-text">로그인 후, 적립 혜택 제공</p>
+    </div>
+    </div>
+
+    <div class="product-detail__cart">
+    <button class="product-detail__cart--like"><span class="product-detail__cart--like-icon"></span></button>
+    <button class="product-detail__cart--notification"><span class="product-detail__cart--notification-icon"></span></button>
+    <button class="product-detail__cart--add-cart">장바구니 담기</button>
+    </div>
+    </div>
+    </div>
+
+
+    </div>
+
+    <div class="product-detail-contents">
+      <img src="./assets/product-detail/Navi.png" alt="네비게이션 이미지">
+      <img src="./assets/product-detail/Description.png" alt="상세 설명 이미지">
+      <img src="./assets/product-detail/_Detail.png" alt="칼리 설명 이미지">
+      <img src="./assets/product-detail/Review.png" alt="상품 리뷰 이미지">
+    </div>
+  </section>
 
   <footer class="footer">
     <div class="footer-inner">
@@ -459,5 +405,6 @@
       <small class="copyright">© KURLY CORP. ALL RIGHTS RESERVED</small>
     </div> 
   </footer>
+
 </body>
 </html>

@@ -6,12 +6,16 @@ input {
 }
 
 .register {
+  border-top: 1px solid $gray-100;
   height: rem(1489);
+  
   .register-inner {
     width: rem(640);
     height: rem(1293);
     margin: auto;
     position: relative;
+    margin-top: rem(40);
+
     .register-title {
       font-size: rem(21.33);
       text-align: center;
@@ -21,27 +25,32 @@ input {
       color: $black;
       position: relative;
     }
-      .required-mark-top:before {
-        content: '*';
-        color: $info-error;
-        position: absolute;
-        top: rem(-3);
-        left: rem(-10);
-      }
+
+    .required-mark-top:before {
+      content: '*';
+      color: $info-error;
+      position: absolute;
+      top: rem(-3);
+      left: rem(-10);
+    }
     
     .register-required {
       width: rem(63);
       font-size: rem(12);
       display: block;
       text-align: right;
-      position: relative;
-      float: right;
+      position: absolute;
+      right: 0;
+      top: 80px;
       margin-bottom: rem(8);
     }
+
     .register-form {
+      margin-top: rem(70);
       .required-mark {
         position: relative;
       }
+
       .required-mark:after {
         content: '*';
         color: $info-error;
@@ -49,6 +58,7 @@ input {
         top: rem(-4);
         right: rem(-12);
       }
+
       fieldset {
         border-top: rem(2) solid $content;
         margin-top: rem(10);
@@ -60,11 +70,13 @@ input {
             padding-left: rem(8);
           }
         }
+
         .wrapper {
           padding: rem(20) 0;
           width: rem(640);
           display: flex;
           align-self: center;
+
           .register-input {
             width: rem(333);
             height: rem(44);
@@ -72,6 +84,7 @@ input {
             color: $gray-300;
             margin: 0 rem(8);
           }
+
           .register-placeholder {
             padding-left: rem(5);
           }
@@ -86,6 +99,7 @@ input {
           color: $primary;
           background-color: transparent;
         }
+
         .register-radio {
           display: flex;
           align-self: center;
@@ -95,10 +109,9 @@ input {
             label {
               width: rem(80);
             }
-          }
-        
-        
 
+        }
+        
         .user-address-wrap {
           .user-address-wrap-input{
             align-items: center;
@@ -112,23 +125,28 @@ input {
               background-color: transparent;
               align-self: center;
             }
+
             p {
               font-size: rem(12);
               margin-top: rem(4);
               color: $black;
             }
+
           }
         }
 
         .user-gender-wrap {
           padding: rem(20) 0;
+
           .gender-check {
             width: rem(333);
             display: flex;
             justify-content: space-between;
+
             &__title {
             display: inline-block;
-            }  
+            }
+
             label {
               font-size: 16px;
               line-height: rem(16);
@@ -196,6 +214,7 @@ input {
             display: flex;
             justify-content: space-between;
             align-items: flex-start;
+
             label {
               font-size: rem(16);
               line-height: rem(24);
@@ -206,7 +225,7 @@ input {
               vertical-align: middle;
             }
             
-            [type="radio"] {
+            [type="checkbox"] {
               vertical-align: middle;
               appearance: none;
               border: max(1px, 0.1em) solid $gray-200;
@@ -216,33 +235,33 @@ input {
               transition: border 0.1s ease-in-out;
             }
             
-            [type="radio"]:checked {
+            [type="checkbox"]:checked {
               border: 0.4em solid $primary;
             }
             
-            [type="radio"]:focus-visible {
+            [type="checkbox"]:focus-visible {
               outline-offset: max(2px, 0.1em);
               outline: max(2px, 0.1em) dotted $primary;
               background-color: $gray-200;
             }
             
-            [type="radio"]:hover {
+            [type="checkbox"]:hover {
               box-shadow: 0 0 0 max(4px, 0.2em) lightgray;
               cursor: pointer;
             }
             
-            [type="radio"]:disabled {
+            [type="checkbox"]:disabled {
               background-color: lightgray;
               box-shadow: none;
               opacity: 0.7;
               cursor: not-allowed;
             }
             
-            [type="radio"]:disabled + span {
+            [type="checkbox"]:disabled + span {
               opacity: 0.7;
               cursor: not-allowed;
             }
-            .register-radio {
+            .register-checkbox {
               align-self: center;
               display: flex;
               display: inline-block;
@@ -272,21 +291,23 @@ input {
         width: rem(139);
         height: rem(32);
         position: relative;
+
         .required-mark-agree:after {
           content: '*';
           color: $info-error;
           position: absolute;
           top: rem(-1);
-          //right: rem(48);
         }
       }
       .check-form {
         margin-top: rem(10);
+
         .agreement-check {
           display: flex;
           flex-direction: column;
           width: rem(429);
           height: rem(256);
+
           label {
             font-size: 16px;
             line-height: rem(16);
@@ -306,14 +327,13 @@ input {
             width: 1.25em;
             height: 1.25em;
             transition: border 0.1s ease-in-out;
-            background: url('/client/assets/sprite-icon/sprite-icons.png') no-repeat -488px -293px;
+            background: url('../../assets/sprite-icon/sprite-icons.png') no-repeat -488px -293px;
             width: 24px;
             height: 24px;
           }
           
           [type="checkbox"]:checked {
-            //border: 0.4em solid $primary;
-            background: url('/client/assets/sprite-icon/sprite-icons.png') no-repeat -488px -326px;
+            background: url('../../assets/sprite-icon/sprite-icons.png') no-repeat -488px -326px;
             width: 24px;
             height: 24px;
           }
@@ -321,7 +341,7 @@ input {
           [type="checkbox"]:focus-visible {
             outline-offset: max(2px, 0.1em);
             outline: max(2px, 0.1em) dotted $primary;
-            background-color: $gray-200;;
+            background-color: $gray-200;
           }
           
           [type="checkbox"]:hover {
@@ -354,11 +374,13 @@ input {
               width: rem(172);
               height: rem(32);
             }
+
             &__title {
               font-weight: 600;
               font-size: rem(21.328);
               line-height: 150%;
             }
+
             &__description{
               width: rem(397);
               height: rem(19);
@@ -371,6 +393,7 @@ input {
               font-weight: 400;
             }
           }
+
           .check {
             display: flex;
             flex-direction: column;
@@ -379,13 +402,15 @@ input {
             padding: 12px 0px;
             width: rem(429);
             height: rem(51);
+            align-self: center;
+
             &__arrow {
               display: inline-block;
               width: 6px;
               height: 11px;
-              background: url('/client/assets/sprite-icon/sprite-icons.png') no-repeat -528px -375px;
-    
+              background: url('../../assets/sprite-icon/sprite-icons.png') no-repeat -528px -375px;
             }
+
             label {
               display: flex;
               flex-direction: row;
@@ -395,14 +420,12 @@ input {
               width: rem(429);
               height: rem(27);
             }
-           
-            .check-n-title {
-              display: flex;
-              align-self: center;
-            }
+
             &__title {
               margin-left: rem(8);
+              align-self: center;
             }
+
             a {
               padding: rem(8);
               color: $primary;
