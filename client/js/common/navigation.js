@@ -8,10 +8,17 @@ export const dropdownToggle = (buttonNode, dropdownNode, token ) => {
 
   } else {
 
-    const dropdownToggleHandler = () => {
+    const dropdownToggleClickHandler = () => {
       toggleClass(dropdownNode, token);
     }
 
-    getNode(buttonNode).addEventListener('click', dropdownToggleHandler);
+    const dropdownToggleKeyHandler = (e) => {
+      if(e.keyCode === 13) {
+        toggleClass(dropdownNode, token);
+      }
+    }
+
+    getNode(buttonNode).addEventListener('click', dropdownToggleClickHandler);
+    getNode(buttonNode).addEventListener('keyup', dropdownToggleKeyHandler);
   }
 }
