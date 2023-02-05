@@ -158,7 +158,7 @@
   }
 
   .item {
-    display: none;
+    display: flex;
     justify-content: space-between;
     align-items: center;
     padding: rem(20px) 0;
@@ -356,6 +356,6 @@
   }
 
   .is-active {
-    display: flex;
+    display: none;
   }
 }
