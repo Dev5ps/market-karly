@@ -61,7 +61,7 @@
   }
 
   .dropdown {
-    visibility: hidden;
+    display: none;
     position: absolute;
     top: rem(72px);
     z-index: 10;
@@ -84,28 +84,11 @@
       height: 24px;
     }
 
+
     &__icon-1 {background: url(../../assets/navigation/category-dropdown-icon-sprite.png) no-repeat 0 0;}
-    &__icon-2 {background: url(../../assets/navigation/category-dropdown-icon-sprite.png) no-repeat 0 $nav-icon-sprite-height * -1;}
-    &__icon-3 {background: url(../../assets/navigation/category-dropdown-icon-sprite.png) no-repeat 0 $nav-icon-sprite-height * -2;}
-    &__icon-4 {background: url(../../assets/navigation/category-dropdown-icon-sprite.png) no-repeat 0 $nav-icon-sprite-height * -3;}
-    &__icon-5 {background: url(../../assets/navigation/category-dropdown-icon-sprite.png) no-repeat 0 $nav-icon-sprite-height * -4;}
-    &__icon-6 {background: url(../../assets/navigation/category-dropdown-icon-sprite.png) no-repeat 0 $nav-icon-sprite-height * -5;}
-    &__icon-7 {background: url(../../assets/navigation/category-dropdown-icon-sprite.png) no-repeat 0 $nav-icon-sprite-height * -6;}
-    &__icon-8 {background: url(../../assets/navigation/category-dropdown-icon-sprite.png) no-repeat 0 $nav-icon-sprite-height * -7;}
-    &__icon-9 {background: url(../../assets/navigation/category-dropdown-icon-sprite.png) no-repeat 0 $nav-icon-sprite-height * -8;}
-    &__icon-10 {background: url(../../assets/navigation/category-dropdown-icon-sprite.png) no-repeat 0 $nav-icon-sprite-height * -9;}
-    &__icon-11 {background: url(../../assets/navigation/category-dropdown-icon-sprite.png) no-repeat 0 $nav-icon-sprite-height * -10;}
-    &__icon-12 {background: url(../../assets/navigation/category-dropdown-icon-sprite.png) no-repeat 0 $nav-icon-sprite-height * -11;}
-    &__icon-13 {background: url(../../assets/navigation/category-dropdown-icon-sprite.png) no-repeat 0 $nav-icon-sprite-height * -12;}
-    &__icon-14 {background: url(../../assets/navigation/category-dropdown-icon-sprite.png) no-repeat 0 $nav-icon-sprite-height * -13;}
-    &__icon-15 {background: url(../../assets/navigation/category-dropdown-icon-sprite.png) no-repeat 0 $nav-icon-sprite-height * -14;}
-    &__icon-16 {background: url(../../assets/navigation/category-dropdown-icon-sprite.png) no-repeat 0 $nav-icon-sprite-height * -15;}
-    &__icon-17 {background: url(../../assets/navigation/category-dropdown-icon-sprite.png) no-repeat 0 $nav-icon-sprite-height * -16;}
-    &__icon-18 {background: url(../../assets/navigation/category-dropdown-icon-sprite.png) no-repeat 0 $nav-icon-sprite-height * -17;}
-    &__icon-19 {background: url(../../assets/navigation/category-dropdown-icon-sprite.png) no-repeat 0 $nav-icon-sprite-height * -18;}
-    &__icon-20 {background: url(../../assets/navigation/category-dropdown-icon-sprite.png) no-repeat 0 $nav-icon-sprite-height * -19;}
-    &__icon-21 {background: url(../../assets/navigation/category-dropdown-icon-sprite.png) no-repeat 0 $nav-icon-sprite-height * -20;}
-    &__icon-22 {background: url(../../assets/navigation/category-dropdown-icon-sprite.png) no-repeat 0 $nav-icon-sprite-height * -21;}
+    @for $i from 2 through 22 {
+      &__icon-#{$i} {background: url(../../assets/navigation/category-dropdown-icon-sprite.png) no-repeat 0 $nav-icon-sprite-height * -($i - 1);}
+    }
 
     &__content {
       display: block;
@@ -155,6 +138,6 @@
   }
 
   .is-active {
-    visibility: visible;
+    display: block;
   }
 }
