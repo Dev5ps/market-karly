@@ -1,4 +1,5 @@
-import { toggleClassAction, listNavigationToggle, rendingProductItem, selectAll } from "./index.js";
+
+import { toggleClassAction, listNavigationToggle, rendingProductItem, selectAll, rendingMainProductItem } from "./index.js";
 
 /* 네비게이션 카테고리 드롭다운 토글 기능 */
 toggleClassAction('.category', '.navigation .dropdown', 'is-active');
@@ -16,3 +17,5 @@ selectAll('.main-cart .item-checkbox', '.main-cart .select__checkbox', '.main-ca
 
 rendingProductItem('.product-list .list-contents .list');
 listNavigationToggle('.product-list .list-navigation');
+rendingMainProductItem('.main-product-list-first .swiper-wrapper');
+rendingMainProductItem('.main-product-list-second .swiper-wrapper');
