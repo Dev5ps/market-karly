@@ -61,68 +61,60 @@
       display: block;
       text-decoration: none;
     }
-  
     img{
       display: block;
       width: 100%;
     }
-  
-    figcaption{
+    .item-info{
       margin-top: rem(16);
       display: flex;
       flex-flow: row wrap;
+      &__title{
+        width: 100%;
+        font-size: rem(16);
+        font-weight: 500;
+        line-height: 1.6;
+        color: $content;
+      }
+      &__discount-rate{
+        display: inline-block;
+        margin-top: rem(8);
+        margin-right: rem(8);
+        font-size: rem(21);
+        font-weight: 600;
+        line-height: 1.5;
+        color: $accent-yellow;
+      }
+      &__discount-price{
+        order: 1;
+        display: inline-block;
+        width: 100%;
+        margin-top: rem(8);
+        font-size: rem(12);
+        font-weight: 400;
+        line-height: 1.6;
+        color: $gray-400;
+        text-decoration: line-through;
+      }
+      &__price{
+        display: inline-block;
+        margin-top: rem(8);
+        font-size: rem(21);
+        font-weight: 600;
+        line-height: 1.5;
+        color: $content;
+      }
     }
-  
-    &__title{
-      width: 100%;
-      font-size: rem(16);
-      font-weight: 500;
-      line-height: 1.6;
-      color: $content;
-    }
-  
-    &__discount-rate{
-      display: inline-block;
-      margin-top: rem(8);
-      margin-right: rem(8);
-      font-size: rem(21);
-      font-weight: 600;
-      line-height: 1.5;
-      color: $accent-yellow;
-    }
-  
-    &__discount-price{
-      order: 1;
-      display: inline-block;
-      width: 100%;
-      margin-top: rem(8);
-      font-size: rem(12);
-      font-weight: 400;
-      line-height: 1.6;
-      color: $gray-400;
-      text-decoration: line-through;
-    }
-  
-    &__price{
-      display: inline-block;
-      margin-top: rem(8);
-      font-size: rem(21);
-      font-weight: 600;
-      line-height: 1.5;
-      color: $content;
-    }
-  
     &__cart-button{
       position: absolute;
       top: rem(258);
-      right: rem(16);
+      right: rem(16); 
       padding: 0;
       background: none;
       border: 0;
       width: rem(45);
       height: rem(45);
     }
-  
     &__cart-button{
       cursor: pointer;
     }
