@@ -8,8 +8,8 @@ export const createProduct = ({
   salePrice = null,
   image = null
 }) => {
-  price = price.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",");
-  salePrice = salePrice.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",");
+  price = price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+  salePrice = salePrice.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
   let imageThumbnail = image.thumbnail;
   if(saleRatio === 0){
     return `

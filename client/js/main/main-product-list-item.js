@@ -9,12 +9,12 @@ export const createMainProduct = ({
   salePrice = null,
   image = null
 }) => {
-  price = price.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",");
-  salePrice = salePrice.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",");
+  price = price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+  salePrice = salePrice.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
   let imageThumbnail = image.thumbnail;
   if(saleRatio === 0){
     return `
-    <div class="item swiper-slide" data-product-item="${id}">
+    <div class="item swiper-slide" data-product-id="${id}">
       <a href="#" target="_blank">
         <img src="./assets/${imageThumbnail}" alt="${alt}" />
         <div class="item-info">
