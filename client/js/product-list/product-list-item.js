@@ -1,5 +1,6 @@
 /* 렌더링 될 제품 리스트 아이템 */
 export const createProduct = ({
+  id,
   name = '제품 이름',
   description = '제품 설명',
   alt = '이미지 설명',
@@ -13,7 +14,7 @@ export const createProduct = ({
   let imageThumbnail = image.thumbnail;
   if(saleRatio === 0){
     return `
-    <div class="item">
+    <div class="item" data-product-id=${id}>
       <a href="#" target="_blank">
         <img src="./assets/${imageThumbnail}" alt="${alt}" />
         <div class="item-info">
@@ -28,7 +29,7 @@ export const createProduct = ({
     `
   } else {
     return `
-    <div class="item">
+    <div class="item" data-product-id="${id}">
       <a href="#" target="_blank">
         <img src="./assets/${imageThumbnail}" alt="${alt}" />
         <div class="item-info">

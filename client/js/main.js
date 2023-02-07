@@ -1,5 +1,4 @@
-
-import { toggleClassAction, listNavigationToggle, rendingProductItem, selectAll, rendingMainProductItem } from "./index.js";
+import { getNodes, toggleClassAction, listNavigationToggle, rendingProductItem, selectAll, rendingMainProductItem, setProductDataToLocalStorage, insertProductDataToCartPage } from "./index.js";
 
 /* 네비게이션 카테고리 드롭다운 토글 기능 */
 toggleClassAction('.category', '.navigation .dropdown', 'is-active');
@@ -15,7 +14,15 @@ toggleClassAction('.room-temperature-food-container', '.room-temperature-food .i
 selectAll('.main-cart .item-checkbox', '.main-cart .select__checkbox', '.main-cart .item-checkbox, .main-cart .select__checkbox');
 /* -------------------------------------------------------------------------- */
 
+
 rendingProductItem('.product-list .list-contents .list');
 listNavigationToggle('.product-list .list-navigation');
 rendingMainProductItem('.main-product-list-first .swiper-wrapper');
 rendingMainProductItem('.main-product-list-second .swiper-wrapper');
+
+/* 장바구니 상품 로컬스토리지에 올리는 기능 */
+setProductDataToLocalStorage('section.main-product-list', '.main-product-list .item', '.main-product-list .item__cart-button',  'http://localhost:3000/products', 'cart', true);
+setProductDataToLocalStorage('section.product-list', '.product-list .list .item', '.product-list .list .item__cart-button', 'http://localhost:3000/products', 'cart', true);
+/* -------------------------------------------------------------------------- */
+
+insertProductDataToCartPage();
