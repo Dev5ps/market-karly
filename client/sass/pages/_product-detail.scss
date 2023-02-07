@@ -38,7 +38,6 @@
                 padding-bottom: rem(16);
                 height: rem(30);
         /* Heading/arge */
-                font-family: 'Pretendard';
                 font-style: normal;
                 font-weight: 700;
                 font-size: rem(21.328);
@@ -50,7 +49,6 @@
             &__name{
                /* [풀무원] 탱탱쫄면 (4개입) */
                 /* Label/XL */
-                font-family: 'Pretendard';
                 font-style: normal;
                 font-weight: 600;
                 font-size: rem(28.43);
@@ -63,7 +61,6 @@
             &__description-text{
                 /* 튀기지 않아 부담 없는 매콤함 */  
                 /* Paragraph/Medium */
-                font-family: 'Pretendard';
                 font-style: normal;
                 font-weight: 400;
                 font-size: rem(16);
@@ -81,7 +78,7 @@
     
                 /* Label/XL */
     
-                font-family: 'Pretendard';
+
                 font-style: normal;
                 font-weight: 600;
                 font-size: rem(28.43);
@@ -102,7 +99,7 @@
                 
                 /* Heading/Medium */
                 
-                font-family: 'Pretendard';
+
                 font-style: normal;
                 font-weight: 700;
                 font-size: rem(16);
@@ -119,7 +116,7 @@
                 
                 /* Label/Medium */
                 
-                font-family: 'Pretendard';
+
                 font-style: normal;
                 font-weight: 600;
                 font-size: rem(16);
@@ -191,6 +188,13 @@
                         .contents-count{
                             padding: 0 rem(8);
                         }   
+                        #result{
+                            font-weight: 600;
+                            font-size: rem(16);
+                            line-height: 150%; 
+                            text-align: center;
+                            width: rem(40);
+                        }
                         button{
                             width: rem(32);
                             height: rem(32);
@@ -208,17 +212,15 @@
                                 height: rem(6);
                                 
                             }
-                            .contents-count{
-                                font-weight: 600;
-                                font-size: rem(16);
-                                line-height: 150%;    
-                            }
+                            
                         }
                         .contents-total{
+                            padding-top: rem(12);
                             padding-right: rem(2);
                             font-weight: 600;
                             font-size: rem(12.003);
                             line-height: 150%;
+                            text-align: center;
                         }
                     }
                         
@@ -246,7 +248,7 @@
                     line-height: 150%;
                     margin-right: rem(17);
                 }  
-                .total-price__sum{
+                #total{
                     font-weight: 600;
                     font-size: rem(28.43);
                     line-height: 150%;

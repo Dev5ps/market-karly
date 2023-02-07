@@ -128,14 +128,14 @@ href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <h2 class="a11y-hidden">상품 상세 페이지</h2>
     <div class="product-summary">
         <div class="detail-photo">
-        <img class="representative-image" src="./assets/product-detail/product01.png" alt="상품 대표 이미지">
+        <img class="representative-image" src="./assets/bacon/detail_view.jpg" alt="상품 대표 이미지">
         </div>
         <div class="detail-inner">
         <div class="inner-title">
         <p class="inner-title__delivery-text">샛별배송</p>
-        <p class="inner-title__name">[풀무원] 탱탱쫄면 (4개입)</p>
-        <p class="inner-title__description-text">튀기지 않아 부담 없는 매콤함</p>
-        <strong class="inner-title__price">4980 <span class="inner-title__price-won">원</span></strong>
+        <p class="inner-title__name">[Kalry's] 한돈 삼겹 베이컨)</p>
+        <p class="inner-title__description-text">무항생제 한돈 삼겹살의 고소한 풍미 그대로</p>
+        <strong class="inner-title__price">3375 <span class="inner-title__price-won">원</span></strong>
         <div class="inner-title__login-text">로그인 후,적립 혜택이 제공됩니다.</div>
     </div>
 
@@ -178,7 +178,7 @@ href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <div class="inner-table">
         <div class="inner-table__name">중량/용량</div>
         <div class="inner-table-contets">
-            <p class="inner-table-contents__value">123g*4봉</p>
+            <p class="inner-table-contents__value">300g</p>
         </div>
     </div>
 
@@ -207,13 +207,14 @@ href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
         <div class="inner-table__name">상품선택</div>
         <div class="inner-table-contents">
             <div class="contents-count-box">
-                <strong>[풀무원] 탱탱쫄면 (4개입)</strong>
+                <strong>[Kalry's] 한돈 삼겹 베이컨</strong>
                 <div class="count-wrap">
                     <button class="minus-button"><span class="minus-button__icon"></span></button>
-                    <span class="contents-count">1</span>
+                    <input type="text" id="result" value="0" />
+                    <!-- <span id="contents-count">1</span> -->
                     <button class="plus-button"><span class="plus-button__icon"></span></button>
                 </div>
-                <span class="contents-total">4,980원</span>
+                <span class="contents-total">3,375원</span>
             </div>
         </div>
     </div> 
@@ -225,7 +226,8 @@ href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <div class="add-cart__total-price">
     <div class="add-cart__total-price-calculation">
     <p class="total-price__text-price">총 상품금액:</p>
-    <p class="total-price__sum">4980원</p>
+    <span id="total"></span>
+    <!-- <p class="total-price__sum">4980원</p> -->
     </div>
     <div class="add-cart__benefit">
     <div class="add-cart__benefit--saving-text">적립</div>
@@ -233,10 +235,10 @@ href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     </div>
     </div>
 
-    <div class="product-detail__cart">
+    <div class="product-detail__cart" data-product-id="product-ckzk">
     <button class="product-detail__cart--like"><span class="product-detail__cart--like-icon"></span></button>
     <button class="product-detail__cart--notification"><span class="product-detail__cart--notification-icon"></span></button>
-    <button class="product-detail__cart--add-cart">장바구니 담기</button>
+    <button class="product-detail__cart--add-cart" >장바구니 담기</button>
     </div>
     </div>
     </div>
