@@ -27,7 +27,7 @@ export const createMainProduct = ({
     `
   } else {
     return `
-    <div class="item swiper-slide" data-product-item="${id}">
+    <div class="item swiper-slide" data-product-id="${id}">
       <a href="#" target="_blank">
         <img src="./assets/${imageThumbnail}" alt="${alt}" />
         <div class="item-info">
