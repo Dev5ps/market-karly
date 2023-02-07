@@ -20,4 +20,6 @@ listNavigationToggle('.product-list .list-navigation');
 rendingMainProductItem('.main-product-list-first .swiper-wrapper');
 rendingMainProductItem('.main-product-list-second .swiper-wrapper');
 
+/* 최근본상품 스크롤 기능 */
+scrollRecentlyPopup('.popup-recently');
 

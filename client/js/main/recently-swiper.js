@@ -14,4 +14,10 @@ export const recentlyProductList = new Swiper(".swiper-4", {
   },
 });
 
-
+export const scrollRecentlyPopup = (node) => {
+  const scrollHandler = () => {
+    let scroll = window.scrollY;
+    css(node, 'top', `${scroll + 400}px`);
+  }
+  window.addEventListener('scroll', scrollHandler);
+}
