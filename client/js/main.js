@@ -1,4 +1,4 @@
-import { toggleClassAction, listNavigationToggle, rendingProductItem, decreaseClick, increaseClick, addLike, addAlarm,selectAll,rendingMainProductItem } from "./index.js";
+import { toggleClassAction, listNavigationToggle, rendingProductItem, decreaseClick, increaseClick, addLike, addAlarm,selectAll,rendingMainProductItem, rendingMainBanner } from "./index.js";
 
 
 
@@ -27,3 +27,8 @@ addLike('.product-detail__cart--like');
 addAlarm('.product-detail__cart--notification');
 rendingMainProductItem('.main-product-list-first .swiper-wrapper');
 rendingMainProductItem('.main-product-list-second .swiper-wrapper');
+
+rendingMainBanner('.main-banner .swiper-wrapper');
+
+// swiper.autoplay.start();
+

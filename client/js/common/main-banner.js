@@ -1,46 +1,51 @@
-const data = [
-    {
-      "id": 1,
-      "src": "banner05.png",
-      "alt": "이주의 특가 상품"
-    },
-    {
-      "id": 2,
-      "src": "banner05.png",
-      "alt": "크리스마스 특별전"
-    },
-    {
-      "id": 3,
-      "src": "banner05.png",
-      "alt": "명절 후 식단 관리"
-    },
+import { getNode, insertLast, tiger } from "../index.js";
+import { createBannerSlide, createMainBanner } from "./main-banner-slide.js";
 
-  ]
-  
-  
- export const swiper = new Swiper('.swiper-1',{
-    autoplay:true,
+setTimeout(() => {
+  const swiper = new Swiper('.swiper-1',{
+    autoplay: {
+      delay: 2000,
+      disableOnInteraction: false,
+    },
+    observer: true,
+    observeParents: true,
+    slidesPerView: 1,
     loop:true,
+    loopedSlides: 1,
     speed: 2000,
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
       },
+  }) 
+}, 100);
 
-    pagination:{
-      el:'.pagination',
-      clickable:true,
-      bulletClass:'bullet',
-      bulletActiveClass:'is-active',
-      renderBullet: function (index,className){
-        return /* html */ `
-          <span class="${className}">
-            <img src="${data[index].src}" alt="${data[index].alt}" />
-          </span>
-        `
-      }
+
+
+
+const renderMainBanner = (target, data) => {
+  insertLast(target,createMainBanner(data));
+}
+
+export const rendingMainBanner = async(node) => {
+
+  try{
+    const mainBannerContainer = getNode(node);
+    let response = await tiger.get('http://localhost:3000/banner');
+    let mainBannerData = response.data;
+    if(mainBannerContainer){
+      mainBannerData.forEach((data)=>{
+        renderMainBanner(mainBannerContainer, data);
+
+      });
     }
+
+  } catch(err){
+    console.log('메인 베너 렌더링에 실패했습니다.');
+  }
+
+}
   
-  })
+
 
 
