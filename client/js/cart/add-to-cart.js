@@ -103,9 +103,34 @@ export const insertProductDataToCartPage = () => {
     </div>
     `;
   }
+  const refreshInfoForAddToCart = (targetNode) => {
+    if(getNode(targetNode)) {
+      let allProduct = JSON.parse(localStorage.getItem('cart'));
+
+      let productsPrice = 0;
+      let productsDiscountPrice = 0;
+      allProduct.forEach(element => {
+        productsPrice += element.price * element.stock;
+        productsDiscountPrice += element.price * (element?.saleRatio ?? 0);
+      })
+      let totalPrice = productsPrice - productsDiscountPrice + 3000;
+      productsPrice = productsPrice.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",");
+      productsDiscountPrice = productsDiscountPrice === 0 ? 0 : '-' + productsDiscountPrice.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",");
+      totalPrice = totalPrice.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",");
+
+      getNode(targetNode).children[1].children[0].children[0].children[0].children[1].children[0].textContent = productsPrice;
+      getNode(targetNode).children[1].children[0].children[1].children[0].children[1].children[0].textContent = productsDiscountPrice;
+      getNode(targetNode).children[1].children[1].children[0].children[0].children[1].children[0].children[0].textContent = totalPrice;
+      if(!getNode('.main-cart .item')) {
+        getNode(targetNode).children[1].children[0].children[2].children[0].children[1].children[0].textContent = 0;
+        getNode(targetNode).children[1].children[1].children[0].children[0].children[1].children[0].children[0].textContent = '0';
+      }
+    }
+  }
 
   const renderProduct = () => {
     let localStorageData = JSON.parse(localStorage.getItem('cart'));
+
 
     localStorageData?.forEach(element => {
       if(element.storageType === 'refrigerated') {
@@ -122,6 +147,7 @@ export const insertProductDataToCartPage = () => {
         }
       }
     });
+    refreshInfoForAddToCart('.main-cart-container .order-detail');
   }
 
   renderProduct();

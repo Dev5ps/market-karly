@@ -1,4 +1,4 @@
-import { getNodes, toggleClassAction, listNavigationToggle, rendingProductItem, selectAll, rendingMainProductItem, setProductDataToLocalStorage, insertProductDataToCartPage, removeSelectedProduct, removeProduct } from "./index.js";
+import { toggleClassAction, listNavigationToggle, rendingProductItem, selectAll, rendingMainProductItem, setProductDataToLocalStorage, insertProductDataToCartPage, removeSelectedProduct, removeProduct, addQuantity, substractQuantity } from "./index.js";
 
 /* 네비게이션 카테고리 드롭다운 토글 기능 */
 toggleClassAction('.category', '.navigation .dropdown', 'is-active');
@@ -9,14 +9,21 @@ listNavigationToggle('.product-list .list-navigation');
 rendingMainProductItem('.main-product-list-first .swiper-wrapper');
 rendingMainProductItem('.main-product-list-second .swiper-wrapper');
 
-/* 장바구니 상품 로컬스토리지에 올리는 기능 */
+/* 장바구니 상품 로컬스토리지에 올리고 페이지에 넣어주는 기능 */
 setProductDataToLocalStorage('section.main-product-list', '.main-product-list .item', '.main-product-list .item__cart-button',  'http://localhost:3000/products', 'cart', true);
 setProductDataToLocalStorage('section.product-list', '.product-list .list .item', '.product-list .list .item__cart-button', 'http://localhost:3000/products', 'cart', true);
+insertProductDataToCartPage();
 /* -------------------------------------------------------------------------- */
 
-insertProductDataToCartPage();
+/* 장바구니 상품 수량 수정 기능 */
+addQuantity('section.main-cart', '.main-cart .item', '.main-cart .item-amount__add', 'cart')
+substractQuantity('section.main-cart', '.main-cart .item', '.main-cart .item-amount__substract', 'cart')
+/* -------------------------------------------------------------------------- */
+
+/* 장바구니 상품 삭제 기능 */
 removeSelectedProduct('.main-cart .item-checkbox', '.main-cart .select__delete', 'cart');
 removeProduct('.main-cart .item-remove', 'cart');
+/* -------------------------------------------------------------------------- */
 
 /* 장바구니 페이지 상품 탭 토글 기능 */
 toggleClassAction('.refrigerated-food-container', '.refrigerated-food .item', 'is-active');
