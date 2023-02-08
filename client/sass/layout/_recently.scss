@@ -1,0 +1,78 @@
+@use '../utils/function' as *;
+@use '../base/theme' as *;
+
+
+
+
+.popup-recently{
+  overflow: hidden;
+  width: rem(74);
+  height: rem(223);
+  position: absolute;
+  top:50%;
+  right: rem(40);
+  border: 1px solid $gray-200;
+  z-index: 100;
+  padding: rem(34) rem(0);
+  box-sizing: border-box;
+  background-color: $white;
+  transition: all 0.3s;
+
+  &__title{
+    font-size: rem(12);
+    font-weight: 600;
+    text-align: center;
+    line-height: 1.5;
+  }
+  
+  .swiper-4{
+    width: rem(40);
+    height: rem(129);
+    margin: rem(8) auto 0 auto;
+    overflow: hidden;
+  }
+  .recently-item{
+    width: rem(40);
+    height: rem(51);
+    border: 1px solid $gray-100;
+    box-sizing: border-box;
+    img{
+      display: block;
+      width: 100%;
+    }
+  }
+
+  &__button-prev{
+    width: rem(10);
+    height: rem(6);
+    padding: rem(4);
+    top:rem(34);
+    left:50%;
+    transform: translateX(-50%);
+  }
+  &__button-next{
+    width: rem(10);
+    height: rem(6);
+    padding: rem(4);
+    top:rem(222);
+    left:50%;
+    transform: translateX(-50%);
+  }
+  &__button-prev::after{
+    display: none !important;
+  }
+  &__button-next::after{
+    display: none !important;
+  }
+  .icon-button{
+    display: inline-block;
+    width: rem(10);
+    height: rem(6);
+  }
+  .icon-prev{
+    background: url('../../assets/sprite-icon/sprite-icons.png') no-repeat -436px -44px;
+  }
+  .icon-next{
+    background: url('../../assets/sprite-icon/sprite-icons.png') no-repeat -436px -70px;
+  }
+}

@@ -8,7 +8,7 @@ export const increaseClick = (node) => {
   document.getElementById('result').value = quantity;
   calculateTotal();
 };
-  plusButton.addEventListener('click',increaseQuantity);
+  plusButton?.addEventListener('click',increaseQuantity);
 }
 
 
@@ -21,7 +21,7 @@ export const decreaseClick = (node) => {
     document.getElementById('result').value = quantity;
     calculateTotal();
   };
-  minusButton.addEventListener('click',decreaseQuantity);
+  minusButton?.addEventListener('click',decreaseQuantity);
 }
 
 export const calculateTotal = () => {
@@ -36,7 +36,7 @@ export const addLike =(node) =>{
   const notifyButton= () => {
     alert('로그인하셔야 본 서비스를 이용하실 수 있습니다');
   };
-likeButton.addEventListener('click',notifyButton)
+likeButton?.addEventListener('click',notifyButton)
 };
 
 
@@ -45,5 +45,5 @@ export const addAlarm =(node) =>{
   const notifyButton= () => {
     alert('로그인하셔야 본 서비스를 이용하실 수 있습니다');
   };
-alarmButton.addEventListener('click',notifyButton)
+alarmButton?.addEventListener('click',notifyButton)
 };
