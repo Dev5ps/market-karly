@@ -10,6 +10,22 @@
     border: rem(2) black;
     padding-bottom: rem(200);
     margin-top: rem(50);
+    .product-detail-contents{
+        &__review{
+        position: relative;
+        top: rem(44);
+        left: rem(895);
+        opacity: 0;
+
+           .pop-up-button{
+            width: rem(155);
+            height: rem(44);
+
+           } 
+        }
+    }
+
+
     .product-summary{
         display: flex;
         justify-content: space-between;
