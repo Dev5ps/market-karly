@@ -18,7 +18,7 @@ setTimeout(() => {
         prevEl: ".swiper-button-prev",
       },
   }) 
-}, 100);
+}, 1000);
 
 
 

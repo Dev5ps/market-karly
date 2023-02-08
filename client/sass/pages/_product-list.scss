@@ -146,6 +146,9 @@
       height: rem(44);
       display: flex;
       font-size: 0;
+      li{
+        display: flex;
+      }
       li::after{
         content: "";
         display: inline-block;
