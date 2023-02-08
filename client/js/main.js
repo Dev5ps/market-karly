@@ -1,4 +1,4 @@
-import { toggleClassAction, listNavigationToggle, rendingProductItem, decreaseClick, increaseClick, addLike, addAlarm,selectAll,rendingMainProductItem, localProductSet, scrollRecentlyPopup, rendingRecentlyProduct } from "./index.js";
+import { toggleClassAction, listNavigationToggle, rendingProductItem, decreaseClick, increaseClick, addLike, addAlarm,selectAll,rendingMainProductItem, localProductSet, scrollRecentlyPopup, rendingRecentlyProduct, loginProgress, registerProgress } from "./index.js";
 
 
 
@@ -19,7 +19,11 @@ selectAll('.main-cart .item-checkbox', '.main-cart .select__checkbox', '.main-ca
 rendingProductItem('.product-list .list-contents .list');
 listNavigationToggle('.product-list .list-navigation');
 
+// 회원가입, 로그인
+registerProgress();
+loginProgress();
 
+// 상품 상세페이지
 decreaseClick('.minus-button');
 increaseClick('.plus-button');
 addLike('.product-detail__cart--like');
@@ -34,4 +38,4 @@ scrollRecentlyPopup('.popup-recently');
 localProductSet('.main-product-list-first');
 localProductSet('.main-product-list-second');
 localProductSet('.product-list .list-contents .list');
-rendingRecentlyProduct('.popup-recently .swiper-4 .swiper-wrapper')
+rendingRecentlyProduct('.popup-recently .swiper-4 .swiper-wrapper');

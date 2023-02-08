@@ -1,6 +1,4 @@
-import { insertLast } from '../../lib/dom/insert.js';
-import { getNode } from '../../lib/dom/getNode.js';
-import { localProductSet } from './recently-viewed.js';
+import { getNode, insertLast } from '../index.js';
 
 let recentlyData = JSON.parse(localStorage.getItem('recently'));
 

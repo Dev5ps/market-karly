@@ -13,49 +13,8 @@
   order: 0;
   flex-grow: 0;
   margin: 0 auto;
-
-  .member {
-    display: flex;
-    flex-direction: row;
-    padding: 12px 0px 0px;
-    gap: 12px;
-    width: rem(178);
-    height: rem(31);
-    font-size: rem(12.003);
-    font-weight: 400;
-    line-height: 160%;
-    flex-grow: 0;
-
-    li {
-      display: flex;
-    }
-
-    li:nth-child(1) {
-      width: rem(42);
-      height: rem(19);
-      color: #5F0080;
-    }
-
-    li:nth-child(2) {
-      width: rem(45);
-      height: rem(19);
-    }
-
-    li:nth-child(3) {
-      width: rem(67);
-      height: rem(19);
-    }
-
-    &__divide-bar {
-        display: inline-block;
-        width: rem(1);
-        height: rem(13);
-        background: #D9D9D9;
-        margin-right: 12px;
-        align-self: center;
-    }
-  }
-
+  padding-top: rem(50);
+  margin-bottom: rem(-60);
   .search-section{
     display: flex;
     flex-direction: row;
@@ -70,6 +29,8 @@
     order: 1;
     align-self: stretch;
     flex-grow: 0;
+    position: relative;
+    margin-top: rem(20);
 
     .logo-and-switch {
       display: flex;
@@ -134,6 +95,57 @@
       }
     }
 
+    .member {
+      display: flex;
+      flex-direction: row;
+      padding: 12px 0px 0px;
+      gap: 12px;
+      width: rem(300);
+      height: rem(31);
+      font-size: rem(12.003);
+      font-weight: 400;
+      line-height: 160%;
+      flex-grow: 0;
+      position: absolute;
+      top: rem(-60);
+      right: rem(0);
+      justify-content: flex-end;
+
+
+
+      li {
+        display: flex;
+      }
+
+      li:nth-child(1) {
+        width: rem(135);
+        height: rem(19);
+        color: #5F0080;
+        justify-content: flex-end;
+      }
+
+      li:nth-child(2) {
+        button {
+          all: unset;
+        }
+        width: rem(45);
+        height: rem(19);
+      }
+
+      li:nth-child(3) {
+        width: rem(67);
+        height: rem(19);
+      }
+
+      &__divide-bar {
+          display: inline-block;
+          width: rem(1);
+          height: rem(13);
+          background: #D9D9D9;
+          margin-right: 12px;
+          align-self: center;
+      }
+    }
     .search {
 
       .inner {

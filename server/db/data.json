@@ -80,5 +80,16 @@
       },
       "stock": 13
     }
+  ],
+  "userList": [
+    {
+      "uid": "ac9db794-8a50-4975-be5e-62581eb07607",
+      "userId": "admin123",
+      "userPw": "admin123!!",
+      "userName": "관리자",
+      "userEmail": "admin123@market.karly",
+      "userNumber": "01012345761",
+      "id": 1
+    }
   ]
 }

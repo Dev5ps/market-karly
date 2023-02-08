@@ -1,5 +1,4 @@
-import { css } from "../../lib/dom/css.js";
-
+import { getNode, css } from "../../lib/index.js";
 
 export const recentlyProductList = new Swiper(".swiper-4", {
   direction: "vertical",
@@ -14,10 +13,15 @@ export const recentlyProductList = new Swiper(".swiper-4", {
   },
 });
 
+let recentlyNode = getNode('.popup-recently');
+
 export const scrollRecentlyPopup = (node) => {
   const scrollHandler = () => {
     let scroll = window.scrollY;
     css(node, 'top', `${scroll + 400}px`);
   }
-  window.addEventListener('scroll', scrollHandler);
+  if(recentlyNode){
+
+    window.addEventListener('scroll', scrollHandler);
+  }
 }
