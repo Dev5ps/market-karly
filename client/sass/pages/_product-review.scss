@@ -1,0 +1,202 @@
+@import '../utils/function';
+@import '../base/theme';
+
+label, input, textarea {
+  box-sizing: border-box;
+}
+.product-detail {
+  position: relative;
+}
+
+.popup-background {
+  background-color: rgba(0, 0, 0, 0.6);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: 1;
+  display: none;
+}
+
+.popup {
+  width: rem(739);
+  height: rem(630);
+  border-radius: rem(16);
+  padding: rem(32);
+  position: fixed;
+  background-color: $white;
+  z-index: 2;
+  top:50%; 
+  left:50%;
+  transform: translate(-50%,-50%);
+  display: none;
+  .review-head {
+    width: rem(729);
+    border-bottom: 1px solid $gray-100;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: rem(20);
+    .review-title {
+      font-size: rem(28.43);
+      font-weight: 700;
+      align-self: center;
+    }
+    .close {
+      background: url('../../assets/popup/Vector.png') no-repeat;
+      display: inline-block;
+      width: rem(12);
+      height: rem(12);
+      padding: rem(12);
+      cursor: pointer;
+      align-self: center;
+    }
+  }
+  .product {
+    width: rem(729);
+    height: rem(104);
+    padding: rem(16) 0 rem(16) 0;
+    border-bottom: 1px solid $gray-100;
+    display: flex;
+    &__name {
+      line-height: rem(24);
+      font-weight: 600;
+      align-self: center;
+      margin-left: rem(24);
+    }
+   }
+   .review-write-form {
+    width: rem(729);
+    height: rem(328);
+    padding-top: rem(16);
+    .review-wrapper{
+      display: flex;
+      justify-content: space-between;
+      align-items: start;
+      width: rem(729);
+    }
+    .review-label {
+      display: block;
+      width: rem(100);
+      height: rem(42);
+      padding: rem(8);
+      line-height: rem(24);
+      font-weight: 600;
+      color: $content;
+      flex-grow: 1;
+      flex-shrink: 0;
+    }
+    .review-input {
+      width: rem(629);
+      height: rem(44);
+      color: $gray-300;
+      border: rem(1) solid $gray-300;
+      border-radius: rem(4);
+      padding-left: rem(20);
+      font-weight: 400;
+    }
+    .review-input:focus {
+      outline: rem(1) solid $content;
+      color: $content;
+    }
+    .review-title {
+      margin-bottom: rem(12);
+      &__text {
+        line-height: rem(25.6);
+      }
+    }
+    .content-wrap {
+      .content-text {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        height: rem(198);
+        border: 1px solid $gray-300;
+        border-radius: 4px;
+        .content-textarea {
+          display: block;
+          height: rem(198);
+          resize: none;
+          border: none;
+          background: none;
+          padding: rem(16);
+          word-break: break-all;
+          z-index: 10;
+          line-height: rem(20);
+        }
+        .content-textarea:focus {
+          outline: rem(1) solid $content;
+          color: $content;
+        }
+        .content-placeholder {
+          position: absolute;
+          height: rem(150);
+          top: 0;
+          left: 0;
+          color: $gray-400;
+          font-weight: 400;
+          font-size: rem(12);
+          line-height: rem(19.2);
+          z-index: 100;
+          padding: rem(16) rem(16) rem(32);
+          overflow-y: auto;
+          &__notice {
+            display: inline-block;
+            margin-top: rem(12);
+            font-size: rem(16);
+            font-weight: 600;
+            line-height: rem(24);
+          }
+          &__list {
+            margin-top: rem(4);
+            li {
+              line-height: rem(19.2);
+            }
+            li:before {
+              content: '•';
+              margin-right: rem(6);
+            }
+            li:last-child {
+              color: #f03f40;
+            }
+            li:last-child:before {
+              content: '※';
+            }
+          }
+        }
+        .content-counter {
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          text-align: right;
+          font-size: rem(12);
+          font-weight: 400;
+          color: $gray-300;
+          margin: rem(4);
+        } 
+      }
+    }
+    .review-btn-wrapper {
+      border-top: 1px solid $gray-100;
+      display: flex;
+      gap: rem(12);
+      justify-content: center;
+      margin-top: rem(70);
+      &__btn {
+        width: rem(186);
+        height: rem(54);
+        border: 1px solid $gray-200;
+        border-radius: rem(4);
+        background-color: transparent;
+        font-weight: 600;
+        color: $content;
+        margin-top: rem(20);
+      }
+    }
+  } 
+}
+
+.is-active {
+  display: block;
+}
+
