@@ -12,19 +12,13 @@
   <script src="./js/main.js" type="module"></script>
   <title>제품 리스트 - 칼리</title>
 </head>
-<body>
 
+<body>
   <header class="header">
     <h1 class="a11y-hidden">마켓칼리</h1>
 
-    <ul class="member">
-      <li><a href="./register.html">회원가입</a></li>
-      <li><span class="member__divide-bar" aria-hidden="true"></span><a href="./login.html">로그인</a></li>
-      <li><span class="member__divide-bar" aria-hidden="true"></span><a href="/">고객센터<img src="./assets/header/Icon-down-1.png" alt="" /></a></li>
-    </ul>
-
     <div class="search-section">
-      <div class="logo-and-switch">
+      <div id="logo-and-switch" class="logo-and-switch">
         <h1 class="logo">
           <a href="/">
             <img src="./assets/header/logo.png" alt="market-karly-logo" />
@@ -35,7 +29,9 @@
           <li><span class="switch__divide-bar" aria-hidden="true"></span><a href="/">뷰티칼리</a></li>
         </ul>
       </div>
-
+      
+      <!-- Member -->
+      
       <div class="search">
         <h2 class="a11y-hidden">검색</h2>
         <form method="POST" action="" class="search-form">
@@ -80,6 +76,8 @@
       </div>
 
     </div>
+
+
   </header>
 
   <section class="navigation">

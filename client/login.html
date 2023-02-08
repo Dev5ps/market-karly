@@ -18,14 +18,8 @@
   <header class="header">
     <h1 class="a11y-hidden">마켓칼리</h1>
 
-    <ul class="member">
-      <li><a href="./register.html">회원가입</a></li>
-      <li><span class="member__divide-bar" aria-hidden="true"></span><a href="./login.html">로그인</a></li>
-      <li><span class="member__divide-bar" aria-hidden="true"></span><a href="/">고객센터<img src="./assets/header/Icon-down-1.png" alt="" /></a></li>
-    </ul>
-
     <div class="search-section">
-      <div class="logo-and-switch">
+      <div id="logo-and-switch" class="logo-and-switch">
         <h1 class="logo">
           <a href="/">
             <img src="./assets/header/logo.png" alt="market-karly-logo" />
@@ -37,6 +31,8 @@
         </ul>
       </div>
 
+      <!-- Member -->
+      
       <div class="search">
         <h2 class="a11y-hidden">검색</h2>
         <form method="POST" action="" class="search-form">
@@ -81,6 +77,8 @@
       </div>
 
     </div>
+
+
   </header>
 
   <section class="navigation">
@@ -129,7 +127,7 @@
   <section class="login">
     <div class="login-wrapper">
     <h2>로그인</h2>
-    <form class="login-form" method="POST" action="">
+    <form id="login-form" class="login-form" >
       <fieldset>
         <legend>로그인 폼</legend>
           <div class="login-inner">
@@ -142,7 +140,7 @@
             </div>
           </div>
           <div class="login-register">
-            <input class="login-register__login-button" type="submit" value="로그인" />
+            <input id="login-btn"class="login-register__login-button" type="submit" value="로그인" />
             <!-- 링크로 되어야함 회원가입 버튼 -->
             <input class="login-register__register-button" type="submit" value="회원가입" />
           </div>

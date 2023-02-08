@@ -1,5 +1,4 @@
-import { getNode, insertLast, tiger } from '../index.js';
-import { createMainProduct } from './main-product-list-item.js';
+import { getNode, insertLast, tiger, createMainProduct } from '../index.js';
 
 /* 메인 리스트 스와이프 */
 

@@ -1,10 +1,4 @@
-
-import { getNode } from '../../lib/dom/getNode.js';
-import { attr } from '../../lib/dom/attr.js';
-import { tiger } from '../../lib/utils/tiger.js';
-import { insertLast } from '../../lib/dom/insert.js';
-
-
+import { getNode, css, attr, tiger } from "../../lib/index.js";
 
 let allEntries = JSON.parse(localStorage.getItem("allEntries"));
 if(allEntries == null) allEntries = [];
@@ -21,11 +15,7 @@ export const localProductSet = (node) => {
     
     loadProductData.data.forEach((data)=>{
       
-      let arr = [data.id,data.image.thumbnail, data.image.alt];
-      
-  
       if(id === data.id){
-        // localStorage.setItem(i,JSON.stringify(arr));
         let dataId = data.id;
         let dataThumbnail = data.image.thumbnail;
         let dataAlt = data.image.alt;
@@ -37,7 +27,6 @@ export const localProductSet = (node) => {
         localStorage.setItem("entry", JSON.stringify(entry));
         allEntries.unshift(entry);
         localStorage.setItem("recently", JSON.stringify(allEntries));
-        // i++;
       }
     })
   }
