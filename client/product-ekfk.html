@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" sizes="16x16" href="./assets/icons/Icon/favicon-16x16.png">
+<link rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+<link rel="stylesheet" href="./css/main.css" />
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="./js/main.js" type="module"></script>
+<title>상세페이지 - 칼리 </title>
+</head>
+
+<body>
+  <header class="header">
+    <h1 class="a11y-hidden">마켓칼리</h1>
+
+    <div class="search-section">
+      <div id="logo-and-switch" class="logo-and-switch">
+        <h1 class="logo">
+          <a href="/">
+            <img src="./assets/header/logo.png" alt="market-karly-logo" />
+          </a>
+        </h1>
+        <ul class="switch">
+          <li class><a href="/">마켓칼리</a></li>
+          <li><span class="switch__divide-bar" aria-hidden="true"></span><a href="/">뷰티칼리</a></li>
+        </ul>
+      </div>
+      
+      <!-- Member -->
+      
+      <div class="search">
+        <h2 class="a11y-hidden">검색</h2>
+        <form method="POST" action="" class="search-form">
+          <fieldset>
+            <legend>검색 폼</legend>
+            <div class="inner">
+              <input type="search" id="search" class="inner__input" placeholder="검색어를 입력해주세요" />
+              <input type="button" class="inner__button"/>
+            </div>
+          </fieldset>
+        </form>
+
+      </div>
+      
+      <div class="icons">
+        <a href="/" class="icons__location">
+          <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_575_569)">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M18.006 30C18.006 30 8.7 22.544 8.7 15.306C8.7 12.8379 9.68045 10.4709 11.4257 8.72566C13.1709 6.98045 15.5379 6 18.006 6C20.4741 6 22.8411 6.98045 24.5863 8.72566C26.3315 10.4709 27.312 12.8379 27.312 15.306C27.312 22.544 18.006 30 18.006 30Z" stroke="#333333" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M17.912 17.907C19.4496 17.907 20.696 16.6606 20.696 15.123C20.696 13.5854 19.4496 12.339 17.912 12.339C16.3744 12.339 15.128 13.5854 15.128 15.123C15.128 16.6606 16.3744 17.907 17.912 17.907Z" stroke="#333333" stroke-width="1.7" stroke-linecap="square" stroke-linejoin="round"/>
+          </g>
+          <defs>
+          <clippath id="clip0_575_569">
+          <rect width="36" height="36" fill="white"/>
+          </clippath>
+          </defs>
+          </svg>
+        </a>
+        <a href="/" class="icons__heart">
+          <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M28.927 8.89301C28.3271 8.29267 27.6147 7.81642 26.8307 7.4915C26.0466 7.16657 25.2062 6.99933 24.3575 6.99933C23.5088 6.99933 22.6684 7.16657 21.8843 7.4915C21.1003 7.81642 20.3879 8.29267 19.788 8.89301L17.959 10.721L16.132 8.89301C14.9202 7.68097 13.2766 6.99995 11.5627 6.99976C9.84881 6.99957 8.20504 7.68024 6.993 8.89201C5.78096 10.1038 5.09993 11.7474 5.09975 13.4613C5.09956 15.1752 5.78022 16.819 6.992 18.031L8.82 19.86L17.252 28.294C17.4395 28.4815 17.6938 28.5868 17.959 28.5868C18.2242 28.5868 18.4785 28.4815 18.666 28.294L27.099 19.86L28.927 18.032C29.5272 17.4321 30.0033 16.7198 30.3281 15.9359C30.653 15.1519 30.8202 14.3116 30.8202 13.463C30.8202 12.6144 30.653 11.7741 30.3281 10.9902C30.0033 10.2062 29.5272 9.49392 28.927 8.89401V8.89301Z" stroke="#333333" stroke-width="1.7" stroke-linecap="round"/>
+          </svg>
+        </a>
+        <a href="./cart.html" class="icons__cart">
+          <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M30.844 10.207L28.124 21.777H12.534L9.82401 10.207H30.844Z" stroke="#333333" stroke-width="1.7" stroke-linecap="square" stroke-linejoin="round"/>
+          <path d="M25.684 29.467C26.8659 29.467 27.824 28.5089 27.824 27.327C27.824 26.1451 26.8659 25.187 25.684 25.187C24.5021 25.187 23.544 26.1451 23.544 27.327C23.544 28.5089 24.5021 29.467 25.684 29.467Z" stroke="#333333" stroke-width="1.7" stroke-linecap="square" stroke-linejoin="round"/>
+          <path d="M14.974 29.467C16.1559 29.467 17.114 28.5089 17.114 27.327C17.114 26.1451 16.1559 25.187 14.974 25.187C13.7921 25.187 12.834 26.1451 12.834 27.327C12.834 28.5089 13.7921 29.467 14.974 29.467Z" stroke="#333333" stroke-width="1.7" stroke-linecap="square" stroke-linejoin="round"/>
+          <path d="M5.164 6.547H8.964L10.724 14.047" stroke="#333333" stroke-width="1.7" stroke-linecap="square" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+
+    </div>
+
+
+  </header>
+  <section class="navigation">
+    <h1 class="a11y-hidden">네비게이션</h1>
+    <div class="navigation-container">
+      <div class="category" aria-label="카테고리 버튼" tabindex="0">
+        <div class="category-container">
+          <span class="category__hamburger"></span>
+          <span class="category__text">카테고리</span>
+        </div>
+      </div>
+      <ul class="dropdown">
+        <li class="dropdown__list"><span class="dropdown__icon-1"></span><a href="./product-list.html" class="dropdown__content">선물하기</a></li>
+        <li class="dropdown__list"><span class="dropdown__icon-2"></span><a href="./product-list.html" class="dropdown__content">채소</a></li>
+        <li class="dropdown__list"><span class="dropdown__icon-3"></span><a href="./product-list.html" class="dropdown__content">과일 · 견과 · 쌀</a></li>
+        <li class="dropdown__list"><span class="dropdown__icon-4"></span><a href="./product-list.html" class="dropdown__content">수산 · 해산 · 건어물</a></li>
+        <li class="dropdown__list"><span class="dropdown__icon-5"></span><a href="./product-list.html" class="dropdown__content">정육 · 계란</a></li>
+        <li class="dropdown__list"><span class="dropdown__icon-6"></span><a href="./product-list.html" class="dropdown__content">국 · 반찬 · 메인요리</a></li>
+        <li class="dropdown__list"><span class="dropdown__icon-7"></span><a href="./product-list.html" class="dropdown__content">샐러드 · 간편식</a></li>
+        <li class="dropdown__list"><span class="dropdown__icon-8"></span><a href="./product-list.html" class="dropdown__content">면 · 양념 · 오일</a></li>
+        <li class="dropdown__list"><span class="dropdown__icon-9"></span><a href="./product-list.html" class="dropdown__content">생수 · 음료 · 우유 · 커피</a></li>
+        <li class="dropdown__list"><span class="dropdown__icon-10"></span><a href="./product-list.html" class="dropdown__content">간식 · 과자 · 떡</a></li>
+        <li class="dropdown__list"><span class="dropdown__icon-11"></span><a href="./product-list.html" class="dropdown__content">베이커리 · 치즈 · 델리</a></li>
+        <li class="dropdown__list"><span class="dropdown__icon-12"></span><a href="./product-list.html" class="dropdown__content">건강식품</a></li>
+        <li class="dropdown__list"><span class="dropdown__icon-13"></span><a href="./product-list.html" class="dropdown__content">와인</a></li>
+        <li class="dropdown__list"><span class="dropdown__icon-14"></span><a href="./product-list.html" class="dropdown__content">전통주</a></li>
+        <li class="dropdown__list"><span class="dropdown__icon-15"></span><a href="./product-list.html" class="dropdown__content">생활용품 · 리빙 · 캠핑</a></li>
+        <li class="dropdown__list"><span class="dropdown__icon-16"></span><a href="./product-list.html" class="dropdown__content">스킨케어 · 메이크업</a></li>
+        <li class="dropdown__list"><span class="dropdown__icon-17"></span><a href="./product-list.html" class="dropdown__content">헤어 · 바디 · 구강</a></li>
+        <li class="dropdown__list"><span class="dropdown__icon-18"></span><a href="./product-list.html" class="dropdown__content">주방용품</a></li>
+        <li class="dropdown__list"><span class="dropdown__icon-19"></span><a href="./product-list.html" class="dropdown__content">가전제품</a></li>
+        <li class="dropdown__list"><span class="dropdown__icon-20"></span><a href="./product-list.html" class="dropdown__content">반려동물</a></li>
+        <li class="dropdown__list"><span class="dropdown__icon-21"></span><a href="./product-list.html" class="dropdown__content">헤어 · 바디 · 구강</a></li>
+        <li class="dropdown__list"><span class="dropdown__icon-22"></span><a href="./product-list.html" class="dropdown__content">여행 · 티켓</a></li>
+      </ul>
+      <ul class="menu" aria-label="메뉴" tabindex="0">
+        <li class="menu__list"><a href="./product-list.html" class="menu__content">신상품</a></li>
+        <li class="menu__list"><a href="./product-list.html" class="menu__content">베스트</a></li>
+        <li class="menu__list"><a href="./product-list.html" class="menu__content">알뜰쇼핑</a></li>
+        <li class="menu__list"><a href="./product-list.html" class="menu__content">특가/혜택</a></li>
+      </ul>
+      <a href="/" class="notice"><span class="notice--strong">샛별·낮 </span>배송안내</a>
+    </div>
+  </section>
+
+  <div class="popup-background"></div>
+
+  <div class="popup">
+    <div class="review-head">
+      <h2 class="review-title">후기 작성</h2>
+      <span class="close"></span>
+    </div>
+    <div class="product">
+      <img class="product__img" src="./assets/popup/Frame134.png" alt="구매한상품이미지" />
+      <span class="product__name">[풀무원] 탱탱쫄면 (4개입)</span>
+    </div>
+    <form class="review-write-form">
+      <div class="review-title review-wrapper">
+        <label class="review-title__name review-label" id="review-title-label" for="review-title-input">제목</label>
+        <input class="review-title__text review-input" id="review-title-input" type="text" placeholder="제목을 입력해 주세요" aria-label="review-title-label"/>
+      </div>
+      <div class="content-wrap review-wrapper">
+        <label class="content-name review-label" id="review-text-label" for="review-text-input">내용</label>
+        <div class="content-text">
+          <textarea class="content-textarea review-input" id="review-text-input" name="content" maxlength="5000" aria-labelledby="review-text-label"></textarea>
+          <div class="content-placeholder">
+            <p class="content-placeholder__preface">컬리는 믿을 수 있는 후기문화를 함께 만들어가고자 합니다. 
+              식품 등의 표시광고에 대한 법률을 준수하고자 다음과 같은 부당한 상품평에 대해서는 별도 고지 없이 
+              임시 대처, 비공개 전환, 삭제, 적립금 회수 등의 필요한 조치가 취해 질 수 있습니다.</p>
+            <span class="content-placeholder__notice">후기 작성시 유의사항</span>
+            <ul class="content-placeholder__list">
+              <li>개인의 주관적인 의견으로 인해 상품의 기능 및 효과에 대하여 오해의 소지가 있는 내용</li>
+              <li>식품/건강기능식품과 관련하여 질병의 예방 및 치료, 체중감량(다이어트)에 효능효과가 있다는 내용</li>
+              <li>일반 화장품을 기능성화장품의 효능효과가 있다는 내용을 통한 오인 표현</li>
+              <li>의약외품을 의약품으로 오인하게 하는 표현</li>
+              <li>생활화학제품을 본래 용도와 다르게 사용하는 내용 및 효능효과를 과장하는 내용</li>
+              <li>욕설, 폭력성, 음란성, 상업성 등의 게시물 또는 구매 상품과 무관하거나 반복되는 동일 단어나 문장을 사용하여 
+                판매자나 다른 이용자의 후기 이용을 방해한다고 판단되는 경우</li>
+              <li>구매한 상품이 아닌 캡쳐 사진, 타인 사진 도용, 포장 박스, 퍼플박스, 구매 상품을 구분할 수 없는 전체 사진 등 
+                상품과 관련 없는 이미지, 동영상을 사용한 경우</li>
+              <li>본인 또는 타인의 주민등록번호, (휴대)전화번호, 이메일 등 개인정보가 포함된 경우</li>
+              <li>그 밖에 상품평으로 인해 다른 회원 또는 제3자에게 피해가 가해질 내용</li>
+              <li>작성된 글과 첨부된 멀티미디어 파일 등으로 이루어진 각 상품평은 개인의 의견을 반영하므로, 게시된 내용에 대한 
+                모든 책임은 작성자에게 있습니다. 또한 비정상적인 방법을 통해 후기를 작성하고 적립금을 취득한 경우 작성자에 법적 
+                책임의 소지가 있음을 알려드립니다.</li>
+            </ul>
+          </div>
+          <div class="content-counter">
+            <span class="content-counter__writing"></span>
+            <!-- <span class="content-counter__max"></span> -->
+          </div>
+        </div>
+      </div>
+      <div class="review-btn-wrapper">
+        <button class="review-btn-wrapper__btn" type="button">취소</button>
+        <button class="review-btn-wrapper__btn" type="button">등록</button>
+      </div>
+    </form>
+  </div>
+  
+  <section class="product-detail">
+    <h2 class="a11y-hidden">상품 상세 페이지</h2>
+    <div class="product-summary">
+        <div class="detail-photo">
+        <img class="representative-image" src="./assets/product-detail/product01.png" alt="상품 대표 이미지">
+        </div>
+        <div class="detail-inner">
+        <div class="inner-title">
+        <p class="inner-title__delivery-text">샛별배송</p>
+        <p class="inner-title__name">[풀무원] 탱탱쫄면 (4개입)</p>
+        <p class="inner-title__description-text">튀기지 않아 부담 없는 매콤함</p>
+        <strong class="inner-title__price">4980 <span class="inner-title__price-won">원</span></strong>
+        <div class="inner-title__login-text">로그인 후,적립 혜택이 제공됩니다.</div>
+    </div>
+
+
+    <div class="inner-information">
+    <div class="inner-table">
+    <div class="inner-table__name">배송</div>
+    <div class="inner-table-contents">
+    <p class="inner-table-contents__value">샛별배송</p>
+    <div class="inner-table-contents__notice">
+    <p>23시 전 주문 시 내일 아침 7시 전 도착</p>
+    <br>(대구 부산 울산 샛별배송 운영시간 별도 확인)
+    </div>
+    </div>
+    </div>
+
+    <div class="inner-table">
+        <div class="inner-table__name">판매자</div>
+        <div class="inner-table-contents">
+            <p class="inner-table-contents__value">컬리</p>
+        </div>
+    </div>
+
+    <div class="inner-table">
+        <div class="inner-table__name">포장타입</div>
+        <div class="inner-table-contents">
+            <p class="inner-table-contents__value">상온 (종이포장)</p>
+            <div class="inner-table-contents__notice">
+            <p>택배배송은 에코 포장이 스티로폼으로 대체됩니다</p></div>
+        </div>
+    </div>
+
+    <div class="inner-table">
+        <div class="inner-table__name">판매단위</div>
+        <div class="inner-table-contents">
+            <p class="inner-table-contents__value">1봉</p>
+        </div>
+    </div>
+        
+    <div class="inner-table">
+        <div class="inner-table__name">중량/용량</div>
+        <div class="inner-table-contets">
+            <p class="inner-table-contents__value">123g*4봉</p>
+        </div>
+    </div>
+
+    <div class="inner-table">
+        <div class="inner-table__name">원산지</div>
+        <div class="inner-table-contents">
+            <p class="inner-table-contents__value">상세페이지 별도표기</p>
+        </div>
+    </div>    
+                    
+    <div class="inner-table">
+        <div class="inner-table__name">알레르기정보</div>
+        <div class="inner-table-contents">
+            <ul class="inner-table-contents__list-value">
+                <li>
+                    -대두, 밀, 쇠고기 함유
+                </li>
+                <li>
+                    계란, 우유, 메밀, 땅콩, 고등어, 게, 돼지고기, 새우, 복숭아, 토마토, 아황산류,호두, 잣, 닭고기, 오징어, 조개류(굴, 전복, 홍합 포함)를 사용한 제품과 같은 제조시설에서 제조
+                </li>
+            </ul>
+        </div>
+    </div> 
+
+    <div class="inner-table">
+        <div class="inner-table__name">상품선택</div>
+        <div class="inner-table-contents">
+            <div class="contents-count-box">
+                <strong>[풀무원] 탱탱쫄면 (4개입)</strong>
+                <div class="count-wrap">
+                    <button class="minus-button"><span class="minus-button__icon"></span></button>
+                    <input type="text" id="result" value="0" />
+                    <!-- <span id="contents-count">1</span> -->
+                    <button class="plus-button"><span class="plus-button__icon"></span></button>
+                </div>
+                <span class="contents-total">4,980원</span>
+            </div>
+        </div>
+    </div> 
+
+    </div>
+
+    <div class="inner__add-cart">
+
+    <div class="add-cart__total-price">
+    <div class="add-cart__total-price-calculation">
+    <p class="total-price__text-price">총 상품금액:</p>
+    <span id="total"></span>
+    <!-- <p class="total-price__sum">4980원</p> -->
+    </div>
+    <div class="add-cart__benefit">
+    <div class="add-cart__benefit--saving-text">적립</div>
+    <p class="add-cart__benefit--login-text">로그인 후, 적립 혜택 제공</p>
+    </div>
+    </div>
+
+    <div class="product-detail__cart" data-product-id="product-ekfk">
+    <button class="product-detail__cart--like"><span class="product-detail__cart--like-icon"></span></button>
+    <button class="product-detail__cart--notification"><span class="product-detail__cart--notification-icon"></span></button>
+    <button class="product-detail__cart--add-cart">장바구니 담기</button>
+    </div>
+    </div>
+    </div>
+
+
+    </div>
+
+    <div class="product-detail-contents">
+      <img src="./assets/product-detail/Navi.png" alt="네비게이션 이미지">
+      <img src="./assets/product-detail/Description.png" alt="상세 설명 이미지">
+      <img src="./assets/product-detail/_Detail.png" alt="칼리 설명 이미지">
+      <div class="product-detail-contents__review">
+        <button class="pop-up-button">팝업버튼</button>
+        </div>
+      <img src="./assets/product-detail/Review.png" alt="상품 리뷰 이미지">
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="customer-service">
+          <h2 class="title">고객행복센터</h2>
+          <div class="info">
+            <strong class="info__number">1644-1107</strong>
+            <p class="info__time">월~토요일 오전 7시 - 오후 6시</p>
+          </div>
+          <div class="inquiry">
+            <ul class="inquiry-list">
+              <li class="button-wrap">
+                <button class="btn" type="button">카카오톡 문의</button>
+                <div class="time">
+                  <p class="time__info">월~토요일 | 오전 7시 - 오후 6시</p>
+                  <p class="time__info">일/공휴일 | 오전 7시 - 오후 1시</p>
+                </div>
+              </li>
+              <li class="button-wrap">
+                <button class="btn" type="button">1:1 문의</button>
+                <div class="time">
+                  <p class="time__info">365일</p>
+                  <p class="time__info">고객센터 운영시간에 순차적으로 답변드리겠습니다.</p>
+                </div>
+              </li>
+              <li class="button-wrap">
+                <button class="btn" type="button">대량주문 문의</button>
+                <div class="time">
+                  <p class="time__info">월~금요일 | 오전9시 - 오후 6시</p>
+                  <p class="time__info">점심시간 | 낮 12시 - 오후 1시</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="inquiry-mail">
+            <ul class="mail">
+              <li>
+                <span class="mail__title">비회원 문의 :</span>
+                <a href="/" class="mail__link">help@karlycorp.com</a>
+              </li>
+              <li>
+                <span class="mail__title">비회원 대량주문 문의 :</span>
+                <a href="/" class="mail__link">help@karlycorp.com</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="about">
+          <ul class="footer-navigation">
+            <li><a href="/">칼리소개</a></li>
+            <li><a href="/">칼리소개영상</a></li>
+            <li><a href="/">인재채용</a></li>
+            <li><a href="/">이용약관</a></li>
+            <li><a href="/">개인정보처리방침</a></li>
+            <li><a href="/">이용안내</a></li>
+          </ul>
+          <address class="address">
+            <ul class="info-wrap">
+              <li class= "info-wrap__line">법인명(상호):주식회사 컬리</li>
+              <li class= "info-wrap__line">사업자등록번호:261-81-23567 </li>
+              <li class= "info-wrap__line">사업자정보확인</li>
+              <li class= "info-wrap__line">통신판매업 : 제 2018-서울강남-01646 호</li>
+              <li class= "info-wrap__line">개인정보보호책임자 : 이원준</li> 
+              <li class= "info-wrap__line">주소 : 서울특별시 강남구 테헤란로 133, 18층(역삼동)</li>
+              <li class= "info-wrap__line">대표이사 : 김슬아</li> 
+              <li class= "info-wrap__line">입점문의 : 입정문의하기</li>
+              <li class= "info-wrap__line">제휴문의 : <a href="/"> business@karlycorp.com</a></li> 
+              <li class= "info-wrap__line">채용문의 : <a href="/"> recruit@karlycorp.com</a></li>
+              <li class= "info-wrap__line">팩스 : 070 - 7500 - 6098</li>
+            </ul>
+          </address>
+          <ul class="sns">
+            <li>
+              <a href="https://blog.naver.com" target="blank" rel="noopener noreferrer" class="sns-link">
+                <img class="sns-link__icon" src="./assets/footer_icon/youtube.png" alt="칼리 네이버 블로그 바로가기" />
+              </a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com" target="blank" rel="noopener noreferrer" class="sns-link">
+                <img class="sns-link__icon" src="./assets/footer_icon/facebook.png" alt="칼리 페이스북 바로가기" />
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com" target="blank" rel="noopener noreferrer" class="sns-link">
+                <img class="sns-link__icon" src="./assets/footer_icon/instagram.png" alt="칼리 인스타그램 바로가기" />
+              </a>
+            </li>
+            <li>
+              <a href="https://post.naver.com" target="blank" rel="noopener noreferrer" class="sns-link">
+                <img class="sns-link__icon" src="./assets/footer_icon/naverPost.png" alt="칼리 네이버 포스트 바로가기" />
+              </a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com" target="blank" rel="noopener noreferrer" class="sns-link">
+                <img class="sns-link__icon" src="./assets/footer_icon/youtube.png" alt="칼리 유튜브 바로가기" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-middle">
+        <ul class="certification">
+          <li>
+            <a href="/" class="certification-link">
+              <img class="certification-link__logo isms" src="./assets/footer_icon/isms.svg" alt="정보보호 관리체계 인증 마크" />
+              <div class="certification-link__summary">
+                <p>[인증범위] 마켓칼리 쇼핑몰 서비스 개발 운영</p>
+                <p>(심사받지 않은 물리적 인프라 제외)</p> 
+                <p>[유효기간] 2022.01.19 ~ 2025.01.18</p>
+              </div>
+              <!-- <span class="certification-btn__summary">[인증범위] 마켓칼리 쇼핑몰 서비스 개발 운영</span>
+              <span class="certification-btn__summary">(심사받지 않은 물리적 인프라 제외)</span>
+              <span class="certification-btn__summary">[유효기간] 2022.01.19 ~ 2025.01.18</span> -->
+              </a>
+            </li>
+          <li>
+            <a href="/" class="certification-link">
+              <img class="certification-link__logo" src="./assets/footer_icon/logo_privacy.svg" alt="개인정보처리시스템 인증 마크" />
+              <div class="certification-link__summary">
+                <p>개인정보보호 우수 웹사이트</p>
+                <p>개인정보처리시스템 인증 (ePRIVACY PLUS)</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="/" class="certification-link">
+              <img class="certification-link__logo" src="./assets/footer_icon/payments.svg" alt="토스 페이먼츠 로고" />
+              <div class="certification-link__summary">
+                <p>토스페이먼츠 구매안전(에스크로) 서비스를 이용하실 수 있습니다.</p>                
+              </div>
+              </a>
+            </li>
+          <li>
+            <a href="/" class="certification-link">
+              <img class="certification-link__logo" src="./assets/footer_icon/Wooribank.svg" alt="우리은행 로고" />
+              <div class="certification-link__summary">
+                <p>고객님이 현금으로 결제한 금액에 대해 우리은행과 채무지급보증 계약을 체결하여 안전거래를 보장하고 있습니다.</p>
+              </div>  
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="sales-description">
+        마켓칼리에서 판매되는 상품 중에는 마켓칼리에 입점한 개별 판매자가 판매하는 마켓플레이스(오픈마켓) 상품이 포함되어 있습니다.
+      </p>
+      <p class="sales-description">
+        마켓플레이스(오픈마켓) 상품의 경우 칼리는 통신판매중개자로서 통신판매의 당사자가 아닙니다. 칼리는 해당 상품의 주문, 품질, 교환/환불 등 의무와 책임을 부담하지 않습니다.
+      </p>  
+      <small class="copyright">© KURLY CORP. ALL RIGHTS RESERVED</small>
+    </div> 
+  </footer>
+  <div class="popup-recently">
+    <h2 class="popup-recently__title">최근 본 상품</h2>
+    <div class="swiper-4">
+      <div class="swiper-wrapper">
+        
+      </div>
+    </div>
+    <div class="popup-recently__button-prev swiper-button-prev swiper-4-button-prev"><span class="icon-button icon-prev"><span class="a11y-hidden">이전</span></span></div>
+    <div class="popup-recently__button-next swiper-button-next swiper-4-button-next"><span class="icon-button icon-next"><span class="a11y-hidden">다음</span></span></div>
+  </div>
+</body>
+</html>

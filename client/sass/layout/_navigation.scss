@@ -1,0 +1,143 @@
+@use '../utils/function' as *;
+@use '../abstracts/variables' as *;
+@use '../base/theme' as *;
+
+
+.navigation {
+  border-bottom: 1px solid $gray-200;
+  &-container {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    position: relative;
+    width: rem(1050px);
+    height: rem(72px);
+    margin: 0 auto;
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  }
+
+  .category {
+
+    padding: rem(16px);
+    cursor: pointer;
+
+    &-container {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      position: relative;
+      height: rem(14px);
+    }
+
+    &__hamburger {
+      display: inline-block;
+      width: rem(14px);
+      height: rem(0px);
+      border: 1px solid #333333;
+    }
+
+    &__hamburger::before,
+    &__hamburger::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      width: rem(14px);
+      height: rem(0px);
+      border: 1px solid #333333;
+    }
+
+    &__hamburger::before {
+      top: 0;
+    }
+
+    &__hamburger::after {
+      bottom: 0;
+    }
+
+    &__text {
+      margin-left: rem(12px);
+      font-weight: 600;
+    }
+  }
+
+  .dropdown {
+    display: none;
+    position: absolute;
+    top: rem(72px);
+    z-index: 20;
+    background-color: $white;
+
+    &__list {
+      position: relative;
+      width: rem(247px);
+      height: rem(40px);
+      vertical-align: middle;
+    }
+    
+    span {
+      display: inline-block;
+      position: absolute;
+      top: 50%;
+      left: rem(12px);
+      transform: translateY(-50%);
+      width: 24px;
+      height: 24px;
+    }
+
+
+    &__icon-1 {background: url(../../assets/navigation/category-dropdown-icon-sprite.png) no-repeat 0 0;}
+    @for $i from 2 through 22 {
+      &__icon-#{$i} {background: url(../../assets/navigation/category-dropdown-icon-sprite.png) no-repeat 0 $nav-icon-sprite-height * -($i - 1);}
+    }
+
+    &__content {
+      display: block;
+      padding: rem(12px) 0 rem(12px) rem(44px);
+      font-weight: 600;
+    }
+
+    &__content:hover {
+      background-color: #e1e1e1;
+      color: #5F0080;
+    }
+  }
+
+  .menu {
+
+    display: flex;
+    justify-content: space-around;
+
+    &__list {
+      width: rem(150px);
+      height: rem(40px);
+      text-align: center;
+    }
+
+    &__content {
+      display: inline-block;
+      width: 100%;
+      padding: rem(12px) 0;
+      font-weight: 600;
+    }
+  }
+
+  .notice {
+    width: rem(95px);
+    height: rem(27px);
+    text-align: center;
+    line-height: 2.25;
+    border: 1px solid #a6a6a6;
+    border-radius: 16px;
+    color: #6b6b6b;
+    font-weight: 400;
+    font-size: rem(12px);
+
+    &--strong {
+      color: #5F0080;
+    }
+  }
+
+  .is-active {
+    display: block;
+  }
+}

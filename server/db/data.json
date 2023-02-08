@@ -1,4 +1,24 @@
 {
+  "banner": [
+    {
+      "id": 1,
+      "name": "첫번째 배너",
+      "src": "./assets/main-banner/banner05.png",
+      "alt": "이주의 특가 상품"
+    },
+    {
+      "id": 2,
+      "name": "두번째 배너",
+      "src": "./assets/main-banner/banner02.jpg",
+      "alt": "로맨틱 발렌타인데이"
+    },
+    {
+      "id": 3,
+      "name": "세번째 배너",
+      "src": "./assets/main-banner/banner03.jpg",
+      "alt": "겨울 방학 간식"
+    }
+  ],
   "products": [
     {
       "id": "product-rksk",
@@ -14,7 +34,8 @@
         "info": "ubuho/detail_info.jpg",
         "alt": "유부호 만두"
       },
-      "stock": 3
+      "stock": 1,
+      "storageType": "frozen"
     },
     {
       "id": "product-ekfk",
@@ -30,7 +51,8 @@
         "info": "tangtang/detail_info.jpg",
         "alt": "풀무원 탱탱쫄면"
       },
-      "stock": 10
+      "stock": 1,
+      "storageType": "room-temperature"
     },
     {
       "id": "product-akqk",
@@ -46,7 +68,8 @@
         "info": "jukkumi/detail_info.jpg",
         "alt": "홍대 주꾸미"
       },
-      "stock": 8
+      "stock": 1,
+      "storageType": "frozen"
     },
     {
       "id": "product-tkwk",
@@ -62,7 +85,8 @@
         "info": "kangnam/detail_info.jpg",
         "alt": "강남면옥 소갈비찜"
       },
-      "stock": 2
+      "stock": 1,
+      "storageType": "frozen"
     },
     {
       "id": "product-ckzk",
@@ -78,7 +102,19 @@
         "info": "bacon/detail_info.jpg",
         "alt": "칼리 한돈 삼겹 베이컨"
       },
-      "stock": 13
+      "stock": 1,
+      "storageType": "refrigerated"
+    }
+  ],
+  "userList": [
+    {
+      "uid": "ac9db794-8a50-4975-be5e-62581eb07607",
+      "userId": "admin123",
+      "userPw": "admin123!!",
+      "userName": "관리자",
+      "userEmail": "admin123@market.karly",
+      "userNumber": "01012345761",
+      "id": 1
     }
   ]
 }

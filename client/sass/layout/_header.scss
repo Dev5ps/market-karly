@@ -1,0 +1,227 @@
+@import '../utils/function';
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 0px 0px 20px;
+  gap: 32px;
+  width: rem(1050);
+  height: rem(125);
+  background: #FFFFFF;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0 auto;
+  padding-top: rem(50);
+  margin-bottom: rem(-60);
+  .search-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    gap: 95px;
+    isolation: isolate;
+    width: rem(1050);
+    height: rem(42);
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+    position: relative;
+    margin-top: rem(20);
+
+    .logo-and-switch {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 0px;
+      gap: 12px;
+      width: rem(267);
+      height: rem(42);
+      position: relative;
+
+      .logo {
+        width: rem(82);
+        height: rem(42);
+      }
+    
+      .switch {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px;
+        gap: 12px;
+        height: rem(32);
+
+        li:nth-child(1) {
+          height: rem(32);
+          font-weight: 600;
+          font-size: rem(21.328);
+          line-height: 150%;
+          color: #5F0080;
+        }
+        
+        li:nth-child(2) {
+          height: rem(32);
+          font-weight: 600;
+          font-size: rem(21.328);
+          line-height: 150%;
+          color: #898989;
+          z-index: 0;
+        }
+      
+        li:nth-child(2):hover {
+          color: #5F0080;
+        }
+      
+        li:nth-child(2)::after {
+          content: "N";
+          font-size: rem(10);
+          position: absolute;
+          top: 0px;
+          right: -10px;
+          color: #FA622F;
+        }
+
+        &__divide-bar {
+          display: inline-block;
+          width: rem(1);
+          height: rem(13);
+          background: #D9D9D9;
+          margin-right: 12px;
+        }
+      }
+    }
+
+    .member {
+      display: flex;
+      flex-direction: row;
+      padding: 12px 0px 0px;
+      gap: 12px;
+      width: rem(300);
+      height: rem(31);
+      font-size: rem(12.003);
+      font-weight: 400;
+      line-height: 160%;
+      flex-grow: 0;
+      position: absolute;
+      top: rem(-60);
+      right: rem(0);
+      justify-content: flex-end;
+
+
+
+      li {
+        display: flex;
+      }
+
+      li:nth-child(1) {
+        width: rem(135);
+        height: rem(19);
+        color: #5F0080;
+        justify-content: flex-end;
+      }
+
+      li:nth-child(2) {
+        button {
+          all: unset;
+        }
+        width: rem(45);
+        height: rem(19);
+      }
+
+      li:nth-child(3) {
+        width: rem(67);
+        height: rem(19);
+      }
+
+      &__divide-bar {
+          display: inline-block;
+          width: rem(1);
+          height: rem(13);
+          background: #D9D9D9;
+          margin-right: 12px;
+          align-self: center;
+      }
+    }
+    .search {
+
+      .inner {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px 20px;
+        gap: 31px;
+        width: rem(400);
+        height: rem(60);
+        left: 330px;
+        top: -11px;
+        border: 1px solid #5F0080;
+        border-radius: 4px;
+        z-index: 2;
+    
+        &__input {
+          width: rem(300);
+          height: rem(34);
+          font-weight: 400;
+          font-size: rem(21.328);
+          line-height: 160%;
+          color: #898989;
+          flex: none;
+          order: 0;
+          flex-grow: 0;
+          border: none;
+          outline: none;
+        }
+    
+        &__button {
+          width: rem(36);
+          height: rem(36);
+          border: none;
+          background-image: url(../../assets/header/Search.png);
+          background-color: transparent;
+          cursor: pointer;
+        }
+        
+      }
+    }
+    
+    .icons {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 0px;
+      gap: 20px;
+      width: rem(148);
+      height: rem(36);
+
+      a:nth-child(1) {
+        width: rem(36);
+        height: rem(36);
+      }
+
+      a:nth-child(2) {
+        width: rem(36);
+        height: rem(36);
+      }
+
+      a:nth-child(3) {
+        width: rem(36);
+        height: rem(36);
+      }
+
+      a svg:hover {
+        fill: #5F0080;
+      }
+    }
+  }
+}
+
+
+
+
+
