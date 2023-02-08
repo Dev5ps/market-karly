@@ -175,11 +175,10 @@
       background: url(../../assets/main-cart/check-icon-true.svg) no-repeat;
     }
 
-    &-image {
+    &-image img{
       width: rem(60px);
       height: rem(78px);
       margin: 0 rem(8px);
-      background: url(../../assets/main-cart/product-1.svg) no-repeat center/cover;
     }
 
     &-title {
