@@ -1,5 +1,4 @@
-import { toggleClassAction, listNavigationToggle, rendingProductItem, decreaseClick, increaseClick, addLike, addAlarm,selectAll,rendingMainProductItem } from "./index.js";
-
+import { toggleClassAction, listNavigationToggle, rendingProductItem, decreaseClick, increaseClick, addLike, addAlarm,selectAll,rendingMainProductItem, localProductSet, scrollRecentlyPopup, rendingRecentlyProduct } from "./index.js";
 
 
 
@@ -27,3 +26,12 @@ addLike('.product-detail__cart--like');
 addAlarm('.product-detail__cart--notification');
 rendingMainProductItem('.main-product-list-first .swiper-wrapper');
 rendingMainProductItem('.main-product-list-second .swiper-wrapper');
+
+/* 최근본상품 스크롤 기능 */
+scrollRecentlyPopup('.popup-recently');
+
+/* 메인 리스트 클릭시 recently localStorage로 올리고 DOM에 뿌리기 */
+localProductSet('.main-product-list-first');
+localProductSet('.main-product-list-second');
+localProductSet('.product-list .list-contents .list');
+rendingRecentlyProduct('.popup-recently .swiper-4 .swiper-wrapper')
