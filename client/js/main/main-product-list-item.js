@@ -15,7 +15,7 @@ export const createMainProduct = ({
   if(saleRatio === 0){
     return `
     <div class="item swiper-slide" data-product-id="${id}">
-      <a href="#" target="_blank">
+      <a href="./product-detail.html" target="_blank">
         <img src="./assets/${imageThumbnail}" alt="${alt}" />
         <div class="item-info">
           <h3 class="item-info__title">${name}</h3>
@@ -28,7 +28,7 @@ export const createMainProduct = ({
   } else {
     return `
     <div class="item swiper-slide" data-product-id="${id}">
-      <a href="#" target="_blank">
+      <a href="./product-detail.html" target="_blank">
         <img src="./assets/${imageThumbnail}" alt="${alt}" />
         <div class="item-info">
           <h3 class="item-info__title">${name}</h3>

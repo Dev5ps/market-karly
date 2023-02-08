@@ -1,5 +1,5 @@
 
-import { toggleClassAction, listNavigationToggle, rendingProductItem, selectAll, rendingMainProductItem, scrollRecentlyPopup } from "./index.js";
+import { toggleClassAction, listNavigationToggle, rendingProductItem, selectAll, rendingMainProductItem, localProductSet, scrollRecentlyPopup, rendingRecentlyProduct } from "./index.js";
 
 /* 네비게이션 카테고리 드롭다운 토글 기능 */
 toggleClassAction('.category', '.navigation .dropdown', 'is-active');
@@ -23,3 +23,8 @@ rendingMainProductItem('.main-product-list-second .swiper-wrapper');
 /* 최근본상품 스크롤 기능 */
 scrollRecentlyPopup('.popup-recently');
 
+/* 메인 리스트 클릭시 recently localStorage로 올리고 DOM에 뿌리기 */
+localProductSet('.main-product-list-first');
+localProductSet('.main-product-list-second');
+localProductSet('.product-list .list-contents .list');
+rendingRecentlyProduct('.popup-recently .swiper-4 .swiper-wrapper')
