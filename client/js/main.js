@@ -1,6 +1,6 @@
 import { toggleClassAction, listNavigationToggle, rendingProductItem, decreaseClick, increaseClick, addLike, addAlarm,selectAll,rendingMainProductItem,
    localProductSet, scrollRecentlyPopup, rendingRecentlyProduct, loginProgress, registerProgress, setProductDataToLocalStorage, insertProductDataToCartPage,
-    removeSelectedProduct, removeProduct, addQuantity, substractQuantity, rendingMainBanner } from "./index.js";
+    removeSelectedProduct, removeProduct, addQuantity, substractQuantity, rendingMainBanner, focusPlaceholder, textCounter, closeButton, buttonColor, popupBtn } from "./index.js";
 
 
 
@@ -75,3 +75,12 @@ addAlarm('.product-detail__cart--notification');
 rendingMainProductItem('.main-product-list-first .swiper-wrapper');
 rendingMainProductItem('.main-product-list-second .swiper-wrapper');
 rendingMainBanner('.main-banner .swiper-wrapper');
+/* 상품 후기 팝업 */
+focusPlaceholder('.content-placeholder');
+textCounter('.content-counter__writing');
+closeButton('.close');
+buttonColor('.review-btn-wrapper');
+popupBtn('.pop-up-button');
+/* -------------------------------------------------------------------------- */
+
+
