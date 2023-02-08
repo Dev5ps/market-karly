@@ -109,7 +109,7 @@ export const insertProductDataToCartPage = () => {
 
       let productsPrice = 0;
       let productsDiscountPrice = 0;
-      allProduct.forEach(element => {
+      allProduct?.forEach(element => {
         productsPrice += element.price * element.stock;
         productsDiscountPrice += element.price * (element?.saleRatio ?? 0);
       })

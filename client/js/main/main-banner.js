@@ -1,5 +1,4 @@
-import { getNode, insertLast, tiger } from "../index.js";
-import { createBannerSlide, createMainBanner } from "./main-banner-slide.js";
+import { getNode, insertLast, tiger, createMainBanner } from "../index.js";
 
 setTimeout(() => {
   const swiper = new Swiper('.swiper-1',{

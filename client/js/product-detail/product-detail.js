@@ -30,20 +30,17 @@ export const calculateTotal = () => {
   document.getElementById('total').innerText = `${result * contentsTotal}원`;
 };
 
+const notifyButton = () => {
+  alert('로그인하셔야 본 서비스를 이용하실 수 있습니다');
+};
 
 export const addLike =(node) =>{
-  const likeButton =getNode(node);
-  const notifyButton= () => {
-    alert('로그인하셔야 본 서비스를 이용하실 수 있습니다');
-  };
-likeButton?.addEventListener('click',notifyButton)
+  const likeButton = getNode(node);
+  likeButton?.addEventListener('click',notifyButton);
 };
 
 
 export const addAlarm =(node) =>{
   const alarmButton =getNode(node);
-  const notifyButton= () => {
-    alert('로그인하셔야 본 서비스를 이용하실 수 있습니다');
-  };
-alarmButton?.addEventListener('click',notifyButton)
+  alarmButton?.addEventListener('click',notifyButton);
 };

@@ -223,6 +223,7 @@ input {
             
             span {
               vertical-align: middle;
+              color: $black;
             }
             
             [type="checkbox"] {
@@ -376,9 +377,11 @@ input {
             }
 
             &__title {
+              margin-left: rem(8);
               font-weight: 600;
-              font-size: rem(21.328);
+              font-size: rem(18);
               line-height: 150%;
+              width: rem(90);
             }
 
             &__description{
@@ -424,6 +427,7 @@ input {
             &__title {
               margin-left: rem(8);
               align-self: center;
+              font-size: rem(15);
             }
 
             a {

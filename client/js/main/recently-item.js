@@ -34,7 +34,7 @@ export const rendingRecentlyProduct = (node) => {
     }
 
   } catch(err){
-    console.log('제품 리스트 렌더링에 실패했습니다.');
+    // console.log('제품 리스트 렌더링에 실패했습니다.');
   }
 
 }

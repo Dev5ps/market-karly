@@ -1,4 +1,4 @@
-import { getNode, css, attr, tiger } from "../../lib/index.js";
+import { getNode, css, attr, tiger } from "../index.js";
 
 let allEntries = JSON.parse(localStorage.getItem("allEntries"));
 if(allEntries == null) allEntries = [];
