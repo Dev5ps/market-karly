@@ -35,13 +35,8 @@ npm install -D npm-run-all
 
 ## 📓 프로젝트간 사용한 기술
 
-<img src="https://images.velog.io/images/vvsogi/post/0e2059e7-0dcb-4433-8e8a-83be6e9b1ba2/html.webp" width="220" height="150"/>
-<img src="https://velog.velcdn.com/images/ahn-sujin/post/97b66d26-1525-4764-bc97-f330033841d9/image.png" width="280" height="150"/>
-<img src="https://res.cloudinary.com/devdevil/image/upload/v1606462633/illunex_blog/2020-11-27-thumb.jpg" width="200" height="150"/>
-<img src="https://images.velog.io/images/leehaeun0/post/524ca7a7-cac1-4753-9577-132705a27f20/git%20(1).png" width="250" height="150"/>
-<img src="https://blog.kakaocdn.net/dn/cwfjTP/btraGHcNx6d/EhZulPwWdKIanh1zFikY00/img.png" width="280" height="150"/>
-<img src="https://i.pcmag.com/imagery/reviews/07td46ju7p6lLVb0QGwc5VF-6.fit_scale.size_760x427.v1569479844.jpg" width="280" height="150"/>
-<img src="https://play-lh.googleusercontent.com/3zprDaMF45riHFTe2Bx7e9xYJbddnMD46xLc_TiH1UXeeF4WIZeP5d6NXH4Sr3kehfC1" width="160" height="150"/>
+<img src="https://images.velog.io/images/vvsogi/post/0e2059e7-0dcb-4433-8e8a-83be6e9b1ba2/html.webp" width="220" height="150"/><img src="https://velog.velcdn.com/images/ahn-sujin/post/97b66d26-1525-4764-bc97-f330033841d9/image.png" width="280" height="150"/><img src="https://res.cloudinary.com/devdevil/image/upload/v1606462633/illunex_blog/2020-11-27-thumb.jpg" width="200" height="150"/>
+<img src="https://images.velog.io/images/leehaeun0/post/524ca7a7-cac1-4753-9577-132705a27f20/git%20(1).png" width="250" height="150"/><img src="https://blog.kakaocdn.net/dn/cwfjTP/btraGHcNx6d/EhZulPwWdKIanh1zFikY00/img.png" width="280" height="150"/><img src="https://i.pcmag.com/imagery/reviews/07td46ju7p6lLVb0QGwc5VF-6.fit_scale.size_760x427.v1569479844.jpg" width="280" height="150"/><img src="https://play-lh.googleusercontent.com/3zprDaMF45riHFTe2Bx7e9xYJbddnMD46xLc_TiH1UXeeF4WIZeP5d6NXH4Sr3kehfC1" width="160" height="150"/>
 
 ---
 
