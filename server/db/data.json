@@ -3,20 +3,20 @@
     {
       "id": 1,
       "name": "첫번째 배너",
-      "src": "main-banner/banner05.png",
+      "src": "./assets/main-banner/banner05.png",
       "alt": "이주의 특가 상품"
     },
     {
       "id": 2,
       "name": "두번째 배너",
-      "src": "main-banner/banner05.png",
-      "alt": "크리스마스 특별전"
+      "src": "./assets/main-banner/banner02.jpg",
+      "alt": "로맨틱 발렌타인데이"
     },
     {
       "id": 3,
       "name": "세번째 배너",
-      "src": "main-banner/banner05.png",
-      "alt": "명절 후 식단 관리"
+      "src": "./assets/main-banner/banner03.jpg",
+      "alt": "겨울 방학 간식"
     }
   ],
   "products": [

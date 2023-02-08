@@ -1,4 +1,3 @@
-export * from './common/index.js';
 export * from './product-list/index.js';
 export * from './product-detail/index.js';
 export * from './main/index.js';

@@ -1,4 +1,4 @@
-import { getNode, css } from "../../lib/index.js";
+import { getNode, css } from "../index.js";
 
 setTimeout(() => {
   const recentlyProductList = new Swiper(".swiper-4", {
@@ -23,7 +23,6 @@ export const scrollRecentlyPopup = (node) => {
     css(node, 'top', `${scroll + 400}px`);
   }
   if(recentlyNode){
-
     window.addEventListener('scroll', scrollHandler);
   }
 }

@@ -64,13 +64,12 @@ toggleClassAction('.room-temperature-food-container', '.room-temperature-food .i
 selectAll('.main-cart .item-checkbox', '.main-cart .select__checkbox', '.main-cart .item-checkbox, .main-cart .select__checkbox');
 /* -------------------------------------------------------------------------- */
 
-
-
 decreaseClick('.minus-button');
 increaseClick('.plus-button');
 addLike('.product-detail__cart--like');
 addAlarm('.product-detail__cart--notification');
 rendingMainBanner('.main-banner .swiper-wrapper');
+
 /* 상품 후기 팝업 */
 focusPlaceholder('.content-placeholder');
 textCounter('.content-counter__writing');

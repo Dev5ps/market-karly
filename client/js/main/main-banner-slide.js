@@ -8,7 +8,7 @@ export const createMainBanner = ({
 }) => {
   return /*html*/ ` 
 
-  <div class="swiper-slide main-banner__banner" data-main-banner="${id}"><a href="https://github.com/Dev5ps"><img src="./assets/main-banner/banner05.png" alt="${alt}" /></a>
+  <div class="swiper-slide main-banner__banner" data-main-banner="${id}"><a href="https://github.com/Dev5ps"><img src="${src}" alt="${alt}"/></a>
   <div class="main-banner__page--number" ${name}>${id}/3</div>
   </div>
 
