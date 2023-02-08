@@ -14,7 +14,8 @@
         "info": "ubuho/detail_info.jpg",
         "alt": "유부호 만두"
       },
-      "stock": 3
+      "stock": 1,
+      "storageType": "frozen"
     },
     {
       "id": "product-ekfk",
@@ -30,7 +31,8 @@
         "info": "tangtang/detail_info.jpg",
         "alt": "풀무원 탱탱쫄면"
       },
-      "stock": 10
+      "stock": 1,
+      "storageType": "room-temperature"
     },
     {
       "id": "product-akqk",
@@ -46,7 +48,8 @@
         "info": "jukkumi/detail_info.jpg",
         "alt": "홍대 주꾸미"
       },
-      "stock": 8
+      "stock": 1,
+      "storageType": "frozen"
     },
     {
       "id": "product-tkwk",
@@ -62,7 +65,8 @@
         "info": "kangnam/detail_info.jpg",
         "alt": "강남면옥 소갈비찜"
       },
-      "stock": 2
+      "stock": 1,
+      "storageType": "frozen"
     },
     {
       "id": "product-ckzk",
@@ -78,7 +82,8 @@
         "info": "bacon/detail_info.jpg",
         "alt": "칼리 한돈 삼겹 베이컨"
       },
-      "stock": 13
+      "stock": 1,
+      "storageType": "refrigerated"
     }
   ],
   "userList": [

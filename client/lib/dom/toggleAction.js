@@ -1,4 +1,4 @@
-import { getNode, toggleClass, typeError } from "../index.js";
+import { getNode, getNodes, toggleClass, typeError } from "../index.js";
 
 /** 
  * buttonNode에 마우스 왼쪽클릭 또는 엔터키 입력 시, 원하는 기능을 담은 클래스 token이 actionNode에 추가/삭제되는 토글 기능을 추가한다. 
@@ -14,12 +14,20 @@ export const toggleClassAction = (buttonNode, actionNode, token ) => {
   } else {
 
     const toggleClassActionClickHandler = () => {
-      toggleClass(actionNode, token);
+      if(getNodes(actionNode).length !== 0) {
+        getNodes(actionNode).forEach(element => {
+          toggleClass(element, token);
+        });
+      }
     }
 
     const toggleClassActionKeyHandler = (e) => {
       if(e.keyCode === 13) {
-        toggleClass(actionNode, token);
+        if(getNodes(actionNode).length !== 0) {
+          getNodes(actionNode).forEach(element => {
+            toggleClass(element, token);
+          });
+        }
       }
     }
 
